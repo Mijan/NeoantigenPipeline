@@ -1,2 +1,2 @@
-def test_module_code():
+def test_pipeline_placeholder():
     pass

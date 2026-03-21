@@ -3,12 +3,12 @@ requires = ["setuptools>=69", "setuptools_scm[toml]>=8", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "package-name"                 # TODO: replace
-description = "Short description"     # TODO: replace
+name = "neoantigen-pipeline"
+description = "A pipeline for neoantigen prediction from VCF files to peptide-MHC binding candidates"
 readme = "README.md"
 requires-python = ">=3.12"
 license = { file = "LICENSE" }
-authors = [{ name = "Your Name" }]    # TODO: replace
+authors = [{ name = "Jan Mikelson" }]
 dynamic = ["version", "dependencies", "optional-dependencies"]
 
 [tool.setuptools]
