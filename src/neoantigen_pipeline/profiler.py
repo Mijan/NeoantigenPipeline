@@ -135,7 +135,9 @@ class ProfileLogger:
 class WandbLogger:
     """Thin wandb wrapper for epoch metrics and per-phase timings."""
 
-    def __init__(self, config: dict, project: str = "my-project", run_name: str | None = None):
+    def __init__(
+        self, config: dict, project: str = "my-project", run_name: str | None = None
+    ):
         import wandb
 
         self._wandb = wandb
