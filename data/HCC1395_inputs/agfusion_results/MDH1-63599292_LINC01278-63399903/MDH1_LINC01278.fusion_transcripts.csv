@@ -1,0 +1,625 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,5'_transcript_biotype,3'_transcript_biotype,Fusion_effect,Protein_length,Protein_weight_(kD)
+MDH1,LINC01278,ENST00000485781,ENST00000610088,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000610234,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000669201,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000609401,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000608623,+,-,retained_intron,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000609143,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000433061,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000669422,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000665831,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000608788,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000667050,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000665386,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000670731,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000659363,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000666891,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000659374,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000661141,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000664128,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000669572,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000654366,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000659087,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000653861,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000670248,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000654880,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000664356,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000666437,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000670203,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000656953,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000666216,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000659222,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000662689,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000662779,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000671033,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000656972,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000662156,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000670242,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000665925,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000654240,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485781,ENST00000671338,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000610088,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000610234,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000669201,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000609401,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000608623,+,-,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000609143,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000433061,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000669422,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000665831,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000608788,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000667050,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000665386,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000670731,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000659363,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000666891,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000659374,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000661141,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000664128,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000669572,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000654366,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000659087,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000653861,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000670248,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000654880,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000664356,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000666437,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000670203,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000656953,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000666216,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000659222,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000662689,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000662779,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000671033,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000656972,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000662156,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000670242,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000665925,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000654240,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000544381,ENST00000671338,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000610088,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000610234,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000669201,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000609401,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000608623,+,-,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000609143,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000433061,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000669422,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000665831,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000608788,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000667050,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000665386,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000670731,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000659363,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000666891,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000659374,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000661141,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000664128,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000669572,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000654366,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000659087,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000653861,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000670248,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000654880,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000664356,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000666437,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000670203,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000656953,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000666216,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000659222,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000662689,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000662779,+,-,protein_coding,lncRNA,intron-exon,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000671033,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000656972,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000662156,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000670242,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000665925,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000654240,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409908,ENST00000671338,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000610088,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000610234,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000669201,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000609401,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000608623,+,-,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000609143,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000433061,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000669422,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000665831,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000608788,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000667050,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000665386,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000670731,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000659363,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000666891,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000659374,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000661141,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000664128,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000669572,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000654366,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000659087,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000653861,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000670248,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000654880,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000664356,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000666437,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000670203,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000656953,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000666216,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000659222,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000662689,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000662779,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000671033,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000656972,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000662156,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000670242,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000665925,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000654240,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000442225,ENST00000671338,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000610088,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000610234,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000669201,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000609401,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000608623,+,-,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000609143,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000433061,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000669422,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000665831,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000608788,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000667050,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000665386,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000670731,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000659363,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000666891,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000659374,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000661141,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000664128,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000669572,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000654366,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000659087,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000653861,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000670248,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000654880,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000664356,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000666437,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000670203,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000656953,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000666216,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000659222,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000662689,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000662779,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000671033,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000656972,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000662156,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000670242,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000665925,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000654240,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000233114,ENST00000671338,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000610088,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000610234,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000669201,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000609401,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000608623,+,-,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000609143,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000433061,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000669422,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000665831,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000608788,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000667050,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000665386,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000670731,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000659363,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000666891,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000659374,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000661141,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000664128,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000669572,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000654366,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000659087,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000653861,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000670248,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000654880,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000664356,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000666437,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000670203,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000656953,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000666216,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000659222,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000662689,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000662779,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000671033,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000656972,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000662156,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000670242,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000665925,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000654240,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000539945,ENST00000671338,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000610088,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000610234,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000669201,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000609401,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000608623,+,-,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000609143,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000433061,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000669422,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000665831,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000608788,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000667050,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000665386,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000670731,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000659363,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000666891,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000659374,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000661141,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000664128,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000669572,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000654366,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000659087,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000653861,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000670248,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000654880,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000664356,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000666437,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000670203,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000656953,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000666216,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000659222,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000662689,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000662779,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000671033,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000656972,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000662156,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000670242,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000665925,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000654240,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000409476,ENST00000671338,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000610088,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000610234,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000669201,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000609401,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000608623,+,-,retained_intron,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000609143,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000433061,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000669422,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000665831,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000608788,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000667050,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000665386,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000670731,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000659363,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000666891,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000659374,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000661141,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000664128,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000669572,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000654366,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000659087,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000653861,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000670248,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000654880,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000664356,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000666437,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000670203,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000656953,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000666216,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000659222,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000662689,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000662779,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000671033,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000656972,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000662156,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000670242,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000665925,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000654240,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000485155,ENST00000671338,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000610088,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000610234,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000669201,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000609401,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000608623,+,-,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000609143,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000433061,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000669422,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000665831,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000608788,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000667050,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000665386,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000670731,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000659363,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000666891,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000659374,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000661141,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000664128,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000669572,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000654366,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000659087,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000653861,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000670248,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000654880,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000664356,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000666437,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000670203,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000656953,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000666216,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000659222,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000662689,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000662779,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000671033,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000656972,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000662156,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000670242,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000665925,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000654240,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000436321,ENST00000671338,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000610088,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000610234,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000669201,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000609401,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000608623,+,-,processed_transcript,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000609143,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000433061,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000669422,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000665831,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000608788,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000667050,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000665386,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000670731,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000659363,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000666891,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000659374,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000661141,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000664128,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000669572,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000654366,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000659087,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000653861,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000670248,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000654880,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000664356,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000666437,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000670203,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000656953,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000666216,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000659222,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000662689,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000662779,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000671033,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000656972,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000662156,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000670242,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000665925,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000654240,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000462944,ENST00000671338,+,-,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000610088,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000610234,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000669201,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000609401,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000608623,+,-,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000609143,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000433061,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000669422,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000665831,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000608788,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000667050,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000665386,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000670731,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000659363,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000666891,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000659374,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000661141,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000664128,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000669572,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000654366,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000659087,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000653861,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000670248,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000654880,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000664356,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000666437,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000670203,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000656953,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000666216,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000659222,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000662689,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000662779,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000671033,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000656972,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000662156,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000670242,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000665925,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000654240,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000454035,ENST00000671338,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000610088,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000610234,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000669201,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000609401,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000608623,+,-,retained_intron,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000609143,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000433061,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000669422,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000665831,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000608788,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000667050,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000665386,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000670731,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000659363,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000666891,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000659374,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000661141,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000664128,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000669572,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000654366,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000659087,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000653861,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000670248,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000654880,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000664356,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000666437,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000670203,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000656953,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000666216,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000659222,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000662689,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000662779,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000671033,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000656972,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000662156,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000670242,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000665925,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000654240,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000472098,ENST00000671338,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000610088,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000610234,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000669201,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000609401,+,-,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000608623,+,-,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000609143,+,-,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000433061,+,-,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000669422,+,-,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000665831,+,-,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000608788,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000667050,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000665386,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000670731,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000659363,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000666891,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000659374,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000661141,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000664128,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000669572,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000654366,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000659087,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000653861,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000670248,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000654880,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000664356,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000666437,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000670203,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000656953,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000666216,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000659222,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000662689,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000662779,+,-,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000671033,+,-,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000656972,+,-,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000662156,+,-,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000670242,+,-,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000665925,+,-,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000654240,+,-,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000421012,ENST00000671338,+,-,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000610088,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000610234,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000669201,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000609401,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000608623,+,-,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000609143,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000433061,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000669422,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000665831,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000608788,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000667050,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000665386,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000670731,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000659363,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000666891,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000659374,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000661141,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000664128,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000669572,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000654366,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000659087,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000653861,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000670248,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000654880,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000664356,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000666437,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000670203,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000656953,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000666216,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000659222,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000662689,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000662779,+,-,protein_coding,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000671033,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000656972,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000662156,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000670242,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000665925,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000654240,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000432309,ENST00000671338,+,-,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000610088,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000610234,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000669201,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000609401,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000608623,+,-,retained_intron,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000609143,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000433061,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000669422,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000665831,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000608788,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000667050,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000665386,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000670731,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000659363,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000666891,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000659374,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000661141,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000664128,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000669572,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000654366,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000659087,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000653861,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000670248,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000654880,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000664356,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000666437,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000670203,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000656953,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000666216,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000659222,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000662689,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000662779,+,-,retained_intron,lncRNA,exon-exon,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000671033,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000656972,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000662156,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000670242,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000665925,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000654240,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000484538,ENST00000671338,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000610088,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000610234,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000669201,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000609401,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000608623,+,-,retained_intron,retained_intron,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000609143,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000433061,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000669422,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000665831,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000608788,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000667050,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000665386,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000670731,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000659363,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000666891,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000659374,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000661141,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000664128,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000669572,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000654366,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000659087,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000653861,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000670248,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000654880,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000664356,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000666437,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000670203,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000656953,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000666216,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000659222,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000662689,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000662779,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000671033,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000656972,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000662156,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000670242,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000665925,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000654240,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+MDH1,LINC01278,ENST00000495083,ENST00000671338,+,-,retained_intron,lncRNA,Outside transcript boundry,NA,NA

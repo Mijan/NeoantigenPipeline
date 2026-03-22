@@ -1,0 +1,3 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,exon_gene_source,exon_number,exon_chr,exon_start,exon_end
+RN7SL4P,RN7SL173P,ENST00000584058,ENST00000461853,+,+,'5 gene,1,3,15738515,15738723
+RN7SL4P,RN7SL173P,ENST00000584058,ENST00000461853,+,+,'3 gene,1,6,158437999,158438088

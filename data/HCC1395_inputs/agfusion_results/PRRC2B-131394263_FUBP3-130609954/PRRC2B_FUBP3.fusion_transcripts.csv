@@ -1,0 +1,71 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,5'_transcript_biotype,3'_transcript_biotype,Fusion_effect,Protein_length,Protein_weight_(kD)
+PRRC2B,FUBP3,ENST00000682525,ENST00000467100,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682525,ENST00000319725,+,+,protein_coding,protein_coding,intron-exon,NA,NA
+PRRC2B,FUBP3,ENST00000682525,ENST00000650723,+,+,protein_coding,nonsense_mediated_decay,intron-3UTR,NA,NA
+PRRC2B,FUBP3,ENST00000682525,ENST00000465949,+,+,protein_coding,processed_transcript,intron-exon,NA,NA
+PRRC2B,FUBP3,ENST00000682525,ENST00000487406,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682525,ENST00000472006,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682525,ENST00000492199,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684596,ENST00000467100,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684596,ENST00000319725,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+PRRC2B,FUBP3,ENST00000684596,ENST00000650723,+,+,protein_coding,nonsense_mediated_decay,5UTR-3UTR,NA,NA
+PRRC2B,FUBP3,ENST00000684596,ENST00000465949,+,+,protein_coding,processed_transcript,5UTR-exon,NA,NA
+PRRC2B,FUBP3,ENST00000684596,ENST00000487406,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684596,ENST00000472006,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684596,ENST00000492199,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683519,ENST00000467100,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683519,ENST00000319725,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+PRRC2B,FUBP3,ENST00000683519,ENST00000650723,+,+,protein_coding,nonsense_mediated_decay,5UTR-3UTR,NA,NA
+PRRC2B,FUBP3,ENST00000683519,ENST00000465949,+,+,protein_coding,processed_transcript,5UTR-exon,NA,NA
+PRRC2B,FUBP3,ENST00000683519,ENST00000487406,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683519,ENST00000472006,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683519,ENST00000492199,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682501,ENST00000467100,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682501,ENST00000319725,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+PRRC2B,FUBP3,ENST00000682501,ENST00000650723,+,+,protein_coding,nonsense_mediated_decay,5UTR-3UTR,NA,NA
+PRRC2B,FUBP3,ENST00000682501,ENST00000465949,+,+,protein_coding,processed_transcript,5UTR-exon,NA,NA
+PRRC2B,FUBP3,ENST00000682501,ENST00000487406,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682501,ENST00000472006,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682501,ENST00000492199,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684694,ENST00000467100,+,+,processed_transcript,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684694,ENST00000319725,+,+,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684694,ENST00000650723,+,+,processed_transcript,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684694,ENST00000465949,+,+,processed_transcript,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684694,ENST00000487406,+,+,processed_transcript,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684694,ENST00000472006,+,+,processed_transcript,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684694,ENST00000492199,+,+,processed_transcript,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684736,ENST00000467100,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684736,ENST00000319725,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684736,ENST00000650723,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684736,ENST00000465949,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684736,ENST00000487406,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684736,ENST00000472006,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684736,ENST00000492199,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683353,ENST00000467100,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683353,ENST00000319725,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683353,ENST00000650723,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683353,ENST00000465949,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683353,ENST00000487406,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683353,ENST00000472006,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683353,ENST00000492199,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682662,ENST00000467100,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682662,ENST00000319725,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682662,ENST00000650723,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682662,ENST00000465949,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682662,ENST00000487406,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682662,ENST00000472006,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000682662,ENST00000492199,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683161,ENST00000467100,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683161,ENST00000319725,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683161,ENST00000650723,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683161,ENST00000465949,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683161,ENST00000487406,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683161,ENST00000472006,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000683161,ENST00000492199,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684112,ENST00000467100,+,+,processed_transcript,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684112,ENST00000319725,+,+,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684112,ENST00000650723,+,+,processed_transcript,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684112,ENST00000465949,+,+,processed_transcript,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684112,ENST00000487406,+,+,processed_transcript,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684112,ENST00000472006,+,+,processed_transcript,processed_transcript,Outside transcript boundry,NA,NA
+PRRC2B,FUBP3,ENST00000684112,ENST00000492199,+,+,processed_transcript,processed_transcript,Outside transcript boundry,NA,NA

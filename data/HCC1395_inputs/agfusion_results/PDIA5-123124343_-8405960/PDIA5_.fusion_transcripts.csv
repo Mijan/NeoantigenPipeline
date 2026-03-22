@@ -1,0 +1,33 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,5'_transcript_biotype,3'_transcript_biotype,Fusion_effect,Protein_length,Protein_weight_(kD)
+PDIA5,,ENST00000489923,ENST00000623860,+,+,nonsense_mediated_decay,lncRNA,exon-exon,NA,NA
+PDIA5,,ENST00000489923,ENST00000651813,+,+,nonsense_mediated_decay,lncRNA,exon-intron,NA,NA
+PDIA5,,ENST00000489923,ENST00000651958,+,+,nonsense_mediated_decay,lncRNA,exon-exon,NA,NA
+PDIA5,,ENST00000489923,ENST00000652379,+,+,nonsense_mediated_decay,lncRNA,exon-intron,NA,NA
+PDIA5,,ENST00000316218,ENST00000623860,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+PDIA5,,ENST00000316218,ENST00000651813,+,+,protein_coding,lncRNA,exon-intron,NA,NA
+PDIA5,,ENST00000316218,ENST00000651958,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+PDIA5,,ENST00000316218,ENST00000652379,+,+,protein_coding,lncRNA,exon-intron,NA,NA
+PDIA5,,ENST00000484644,ENST00000623860,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000484644,ENST00000651813,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000484644,ENST00000651958,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000484644,ENST00000652379,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000495004,ENST00000623860,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000495004,ENST00000651813,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000495004,ENST00000651958,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000495004,ENST00000652379,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000472319,ENST00000623860,+,+,processed_transcript,lncRNA,exon-exon,NA,NA
+PDIA5,,ENST00000472319,ENST00000651813,+,+,processed_transcript,lncRNA,exon-intron,NA,NA
+PDIA5,,ENST00000472319,ENST00000651958,+,+,processed_transcript,lncRNA,exon-exon,NA,NA
+PDIA5,,ENST00000472319,ENST00000652379,+,+,processed_transcript,lncRNA,exon-intron,NA,NA
+PDIA5,,ENST00000467157,ENST00000623860,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000467157,ENST00000651813,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000467157,ENST00000651958,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000467157,ENST00000652379,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000485208,ENST00000623860,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000485208,ENST00000651813,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000485208,ENST00000651958,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000485208,ENST00000652379,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000469649,ENST00000623860,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000469649,ENST00000651813,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000469649,ENST00000651958,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+PDIA5,,ENST00000469649,ENST00000652379,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA

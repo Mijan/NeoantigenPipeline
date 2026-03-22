@@ -1,0 +1,3 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,Domain_ID,Domain_name,Domain_description,Protein_start,Protein_end
+GNA12,CARD11,ENST00000275364,ENST00000396946,-,-,PF00503,G-alpha,G-protein alpha subunit,38,103
+GNA12,CARD11,ENST00000275364,ENST00000396946,-,-,PF00619,CARD,Caspase recruitment domain,126,211

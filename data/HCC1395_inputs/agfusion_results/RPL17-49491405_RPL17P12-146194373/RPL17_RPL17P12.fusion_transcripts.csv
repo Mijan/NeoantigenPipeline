@@ -1,0 +1,25 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,5'_transcript_biotype,3'_transcript_biotype,Fusion_effect,Protein_length,Protein_weight_(kD)
+RPL17,RPL17P12,ENST00000618619,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000584364,ENST00000413391,-,+,retained_intron,processed_pseudogene,Outside transcript boundry,NA,NA
+RPL17,RPL17P12,ENST00000618613,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000579408,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000579248,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000581373,ENST00000413391,-,+,protein_coding,processed_pseudogene,intron-exon,NA,NA
+RPL17,RPL17P12,ENST00000580261,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000580210,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000583637,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000578532,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000582588,ENST00000413391,-,+,retained_intron,processed_pseudogene,Outside transcript boundry,NA,NA
+RPL17,RPL17P12,ENST00000617346,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000581091,ENST00000413391,-,+,processed_transcript,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000581741,ENST00000413391,-,+,retained_intron,processed_pseudogene,Outside transcript boundry,NA,NA
+RPL17,RPL17P12,ENST00000583036,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000615760,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000580387,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000582935,ENST00000413391,-,+,retained_intron,processed_pseudogene,Outside transcript boundry,NA,NA
+RPL17,RPL17P12,ENST00000615479,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000578528,ENST00000413391,-,+,protein_coding,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000579495,ENST00000413391,-,+,retained_intron,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000582782,ENST00000413391,-,+,retained_intron,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000578966,ENST00000413391,-,+,retained_intron,processed_pseudogene,exon-exon,NA,NA
+RPL17,RPL17P12,ENST00000581305,ENST00000413391,-,+,retained_intron,processed_pseudogene,exon-exon,NA,NA

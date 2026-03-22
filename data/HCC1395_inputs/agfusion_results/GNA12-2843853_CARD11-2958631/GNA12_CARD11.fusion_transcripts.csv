@@ -1,0 +1,33 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,5'_transcript_biotype,3'_transcript_biotype,Fusion_effect,Protein_length,Protein_weight_(kD)
+GNA12,CARD11,ENST00000275364,ENST00000396946,-,-,protein_coding,protein_coding,in-frame,1257,144.91184500000065
+GNA12,CARD11,ENST00000275364,ENST00000480332,-,-,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000275364,ENST00000355508,-,-,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000275364,ENST00000356408,-,-,protein_coding,protein_coding,exon-exon,NA,NA
+GNA12,CARD11,ENST00000491117,ENST00000396946,-,-,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000491117,ENST00000480332,-,-,processed_transcript,retained_intron,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000491117,ENST00000355508,-,-,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000491117,ENST00000356408,-,-,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000407904,ENST00000396946,-,-,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000407904,ENST00000480332,-,-,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000407904,ENST00000355508,-,-,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000407904,ENST00000356408,-,-,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000407653,ENST00000396946,-,-,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000407653,ENST00000480332,-,-,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000407653,ENST00000355508,-,-,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000407653,ENST00000356408,-,-,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000496740,ENST00000396946,-,-,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000496740,ENST00000480332,-,-,processed_transcript,retained_intron,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000496740,ENST00000355508,-,-,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000496740,ENST00000356408,-,-,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000471281,ENST00000396946,-,-,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000471281,ENST00000480332,-,-,processed_transcript,retained_intron,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000471281,ENST00000355508,-,-,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000471281,ENST00000356408,-,-,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000485329,ENST00000396946,-,-,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000485329,ENST00000480332,-,-,processed_transcript,retained_intron,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000485329,ENST00000355508,-,-,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000485329,ENST00000356408,-,-,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000447791,ENST00000396946,-,-,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000447791,ENST00000480332,-,-,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000447791,ENST00000355508,-,-,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+GNA12,CARD11,ENST00000447791,ENST00000356408,-,-,protein_coding,protein_coding,Outside transcript boundry,NA,NA

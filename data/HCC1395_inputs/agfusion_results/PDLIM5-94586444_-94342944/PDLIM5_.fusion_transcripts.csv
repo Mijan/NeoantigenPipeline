@@ -1,0 +1,24 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,5'_transcript_biotype,3'_transcript_biotype,Fusion_effect,Protein_length,Protein_weight_(kD)
+PDLIM5,,ENST00000359265,ENST00000667612,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+PDLIM5,,ENST00000317968,ENST00000667612,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+PDLIM5,,ENST00000514830,ENST00000667612,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDLIM5,,ENST00000512274,ENST00000667612,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+PDLIM5,,ENST00000509333,ENST00000667612,+,+,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+PDLIM5,,ENST00000503974,ENST00000667612,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+PDLIM5,,ENST00000504489,ENST00000667612,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+PDLIM5,,ENST00000627587,ENST00000667612,+,+,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+PDLIM5,,ENST00000542407,ENST00000667612,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+PDLIM5,,ENST00000508216,ENST00000667612,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+PDLIM5,,ENST00000514743,ENST00000667612,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+PDLIM5,,ENST00000511767,ENST00000667612,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDLIM5,,ENST00000510099,ENST00000667612,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+PDLIM5,,ENST00000509357,ENST00000667612,+,+,nonsense_mediated_decay,lncRNA,exon-exon,NA,NA
+PDLIM5,,ENST00000513341,ENST00000667612,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+PDLIM5,,ENST00000508531,ENST00000667612,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+PDLIM5,,ENST00000511586,ENST00000667612,+,+,processed_transcript,lncRNA,exon-exon,NA,NA
+PDLIM5,,ENST00000380176,ENST00000667612,+,+,processed_transcript,lncRNA,exon-exon,NA,NA
+PDLIM5,,ENST00000506632,ENST00000667612,+,+,nonsense_mediated_decay,lncRNA,exon-exon,NA,NA
+PDLIM5,,ENST00000318007,ENST00000667612,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+PDLIM5,,ENST00000380180,ENST00000667612,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+PDLIM5,,ENST00000437932,ENST00000667612,+,+,protein_coding,lncRNA,5UTR-exon,NA,NA
+PDLIM5,,ENST00000615540,ENST00000667612,+,+,protein_coding,lncRNA,exon-exon,NA,NA

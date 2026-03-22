@@ -1,0 +1,55 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,5'_transcript_biotype,3'_transcript_biotype,Fusion_effect,Protein_length,Protein_weight_(kD)
+OSBPL9,EPS15-AS1,ENST00000371714,ENST00000415031,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+OSBPL9,EPS15-AS1,ENST00000371714,ENST00000426017,+,+,protein_coding,lncRNA,exon-intron,NA,NA
+OSBPL9,EPS15-AS1,ENST00000435274,ENST00000415031,+,+,nonsense_mediated_decay,lncRNA,3UTR-exon,NA,NA
+OSBPL9,EPS15-AS1,ENST00000435274,ENST00000426017,+,+,nonsense_mediated_decay,lncRNA,3UTR-intron,NA,NA
+OSBPL9,EPS15-AS1,ENST00000447887,ENST00000415031,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+OSBPL9,EPS15-AS1,ENST00000447887,ENST00000426017,+,+,protein_coding,lncRNA,exon-intron,NA,NA
+OSBPL9,EPS15-AS1,ENST00000495776,ENST00000415031,+,+,nonsense_mediated_decay,lncRNA,exon-exon,NA,NA
+OSBPL9,EPS15-AS1,ENST00000495776,ENST00000426017,+,+,nonsense_mediated_decay,lncRNA,exon-intron,NA,NA
+OSBPL9,EPS15-AS1,ENST00000428468,ENST00000415031,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+OSBPL9,EPS15-AS1,ENST00000428468,ENST00000426017,+,+,protein_coding,lncRNA,exon-intron,NA,NA
+OSBPL9,EPS15-AS1,ENST00000453295,ENST00000415031,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+OSBPL9,EPS15-AS1,ENST00000453295,ENST00000426017,+,+,protein_coding,lncRNA,exon-intron,NA,NA
+OSBPL9,EPS15-AS1,ENST00000489990,ENST00000415031,+,+,nonsense_mediated_decay,lncRNA,exon-exon,NA,NA
+OSBPL9,EPS15-AS1,ENST00000489990,ENST00000426017,+,+,nonsense_mediated_decay,lncRNA,exon-intron,NA,NA
+OSBPL9,EPS15-AS1,ENST00000484890,ENST00000415031,+,+,retained_intron,lncRNA,exon-exon,NA,NA
+OSBPL9,EPS15-AS1,ENST00000484890,ENST00000426017,+,+,retained_intron,lncRNA,exon-intron,NA,NA
+OSBPL9,EPS15-AS1,ENST00000534040,ENST00000415031,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000534040,ENST00000426017,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000532975,ENST00000415031,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000532975,ENST00000426017,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000527631,ENST00000415031,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000527631,ENST00000426017,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000531828,ENST00000415031,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000531828,ENST00000426017,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000361556,ENST00000415031,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000361556,ENST00000426017,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000473207,ENST00000415031,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000473207,ENST00000426017,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000533884,ENST00000415031,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000533884,ENST00000426017,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000481937,ENST00000415031,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000481937,ENST00000426017,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000526917,ENST00000415031,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000526917,ENST00000426017,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000462759,ENST00000415031,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000462759,ENST00000426017,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000486942,ENST00000415031,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000486942,ENST00000426017,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000467064,ENST00000415031,+,+,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000467064,ENST00000426017,+,+,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000524620,ENST00000415031,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000524620,ENST00000426017,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000528603,ENST00000415031,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000528603,ENST00000426017,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000475697,ENST00000415031,+,+,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000475697,ENST00000426017,+,+,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000531061,ENST00000415031,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000531061,ENST00000426017,+,+,nonsense_mediated_decay,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000531819,ENST00000415031,+,+,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000531819,ENST00000426017,+,+,retained_intron,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000533825,ENST00000415031,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000533825,ENST00000426017,+,+,processed_transcript,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000625138,ENST00000415031,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+OSBPL9,EPS15-AS1,ENST00000625138,ENST00000426017,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA

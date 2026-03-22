@@ -1,0 +1,6 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,5'_transcript_biotype,3'_transcript_biotype,Fusion_effect,Protein_length,Protein_weight_(kD)
+PRR16,,ENST00000407149,ENST00000511422,+,+,protein_coding,lncRNA,exon-exon,NA,NA
+PRR16,,ENST00000379551,ENST00000511422,+,+,protein_coding,lncRNA,5UTR-exon,NA,NA
+PRR16,,ENST00000509923,ENST00000511422,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+PRR16,,ENST00000505123,ENST00000511422,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA
+PRR16,,ENST00000446965,ENST00000511422,+,+,protein_coding,lncRNA,Outside transcript boundry,NA,NA

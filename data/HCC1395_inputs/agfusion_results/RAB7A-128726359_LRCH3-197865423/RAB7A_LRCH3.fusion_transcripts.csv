@@ -1,0 +1,343 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,5'_transcript_biotype,3'_transcript_biotype,Fusion_effect,Protein_length,Protein_weight_(kD)
+RAB7A,LRCH3,ENST00000676214,ENST00000443727,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000438796,+,+,protein_coding,protein_coding,intron-exon,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000428136,+,+,protein_coding,protein_coding,intron-exon,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000414675,+,+,protein_coding,protein_coding,intron-exon,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000441090,+,+,protein_coding,protein_coding,intron-exon,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000334859,+,+,protein_coding,protein_coding,intron-exon,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000425562,+,+,protein_coding,protein_coding,intron-exon,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000493726,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000494069,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000461674,+,+,protein_coding,retained_intron,intron-exon,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000452660,+,+,protein_coding,protein_coding,intron-exon,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000433298,+,+,protein_coding,protein_coding,intron-exon,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000481048,+,+,protein_coding,retained_intron,intron-exon,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000466845,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000471667,+,+,protein_coding,retained_intron,intron-exon,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000483442,+,+,protein_coding,retained_intron,intron-exon,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000473177,+,+,protein_coding,retained_intron,intron-intron,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000466054,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676214,ENST00000476664,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000443727,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000438796,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000428136,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000414675,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000441090,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000334859,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000425562,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000493726,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000494069,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000461674,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000452660,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000433298,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000481048,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000466845,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000471667,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000483442,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000473177,+,+,protein_coding,retained_intron,5UTR-intron,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000466054,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676425,ENST00000476664,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000443727,+,+,retained_intron,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000438796,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000428136,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000414675,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000441090,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000334859,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000425562,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000493726,+,+,retained_intron,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000494069,+,+,retained_intron,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000461674,+,+,retained_intron,retained_intron,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000452660,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000433298,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000481048,+,+,retained_intron,retained_intron,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000466845,+,+,retained_intron,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000471667,+,+,retained_intron,retained_intron,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000483442,+,+,retained_intron,retained_intron,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000473177,+,+,retained_intron,retained_intron,exon-intron,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000466054,+,+,retained_intron,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675712,ENST00000476664,+,+,retained_intron,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000443727,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000438796,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000428136,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000414675,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000441090,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000334859,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000425562,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000493726,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000494069,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000461674,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000452660,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000433298,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000481048,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000466845,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000471667,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000483442,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000473177,+,+,protein_coding,retained_intron,5UTR-intron,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000466054,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675864,ENST00000476664,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000443727,+,+,nonsense_mediated_decay,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000438796,+,+,nonsense_mediated_decay,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000428136,+,+,nonsense_mediated_decay,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000414675,+,+,nonsense_mediated_decay,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000441090,+,+,nonsense_mediated_decay,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000334859,+,+,nonsense_mediated_decay,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000425562,+,+,nonsense_mediated_decay,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000493726,+,+,nonsense_mediated_decay,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000494069,+,+,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000461674,+,+,nonsense_mediated_decay,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000452660,+,+,nonsense_mediated_decay,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000433298,+,+,nonsense_mediated_decay,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000481048,+,+,nonsense_mediated_decay,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000466845,+,+,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000471667,+,+,nonsense_mediated_decay,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000483442,+,+,nonsense_mediated_decay,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000473177,+,+,nonsense_mediated_decay,retained_intron,5UTR-intron,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000466054,+,+,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000490093,ENST00000476664,+,+,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000443727,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000438796,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000428136,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000414675,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000441090,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000334859,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000425562,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000493726,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000494069,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000461674,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000452660,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000433298,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000481048,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000466845,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000471667,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000483442,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000473177,+,+,protein_coding,retained_intron,5UTR-intron,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000466054,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675342,ENST00000476664,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000443727,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000438796,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000428136,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000414675,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000441090,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000334859,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000425562,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000493726,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000494069,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000461674,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000452660,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000433298,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000481048,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000466845,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000471667,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000483442,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000473177,+,+,protein_coding,retained_intron,5UTR-intron,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000466054,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000493186,ENST00000476664,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000443727,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000438796,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000428136,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000414675,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000441090,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000334859,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000425562,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000493726,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000494069,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000461674,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000452660,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000433298,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000481048,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000466845,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000471667,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000483442,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000473177,+,+,protein_coding,retained_intron,5UTR-intron,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000466054,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674748,ENST00000476664,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000443727,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000438796,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000428136,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000414675,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000441090,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000334859,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000425562,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000493726,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000494069,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000461674,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000452660,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000433298,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000481048,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000466845,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000471667,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000483442,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000473177,+,+,protein_coding,retained_intron,5UTR-intron,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000466054,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000265062,ENST00000476664,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000443727,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000438796,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000428136,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000414675,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000441090,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000334859,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000425562,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000493726,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000494069,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000461674,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000452660,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000433298,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000481048,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000466845,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000471667,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000483442,+,+,protein_coding,retained_intron,5UTR-exon,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000473177,+,+,protein_coding,retained_intron,5UTR-intron,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000466054,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000482525,ENST00000476664,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000443727,+,+,retained_intron,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000438796,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000428136,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000414675,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000441090,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000334859,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000425562,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000493726,+,+,retained_intron,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000494069,+,+,retained_intron,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000461674,+,+,retained_intron,retained_intron,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000452660,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000433298,+,+,retained_intron,protein_coding,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000481048,+,+,retained_intron,retained_intron,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000466845,+,+,retained_intron,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000471667,+,+,retained_intron,retained_intron,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000483442,+,+,retained_intron,retained_intron,exon-exon,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000473177,+,+,retained_intron,retained_intron,exon-intron,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000466054,+,+,retained_intron,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000491681,ENST00000476664,+,+,retained_intron,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000443727,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000438796,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000428136,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000414675,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000441090,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000334859,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000425562,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000493726,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000494069,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000461674,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000452660,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000433298,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000481048,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000466845,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000471667,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000483442,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000473177,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000466054,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000675497,ENST00000476664,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000443727,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000438796,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000428136,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000414675,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000441090,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000334859,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000425562,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000493726,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000494069,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000461674,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000452660,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000433298,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000481048,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000466845,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000471667,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000483442,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000473177,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000466054,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674589,ENST00000476664,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000443727,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000438796,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000428136,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000414675,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000441090,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000334859,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000425562,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000493726,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000494069,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000461674,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000452660,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000433298,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000481048,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000466845,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000471667,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000483442,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000473177,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000466054,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000464496,ENST00000476664,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000443727,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000438796,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000428136,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000414675,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000441090,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000334859,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000425562,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000493726,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000494069,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000461674,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000452660,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000433298,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000481048,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000466845,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000471667,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000483442,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000473177,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000466054,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000483906,ENST00000476664,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000443727,+,+,protein_coding,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000438796,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000428136,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000414675,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000441090,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000334859,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000425562,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000493726,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000494069,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000461674,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000452660,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000433298,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000481048,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000466845,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000471667,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000483442,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000473177,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000466054,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000485280,ENST00000476664,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000443727,+,+,nonsense_mediated_decay,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000438796,+,+,nonsense_mediated_decay,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000428136,+,+,nonsense_mediated_decay,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000414675,+,+,nonsense_mediated_decay,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000441090,+,+,nonsense_mediated_decay,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000334859,+,+,nonsense_mediated_decay,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000425562,+,+,nonsense_mediated_decay,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000493726,+,+,nonsense_mediated_decay,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000494069,+,+,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000461674,+,+,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000452660,+,+,nonsense_mediated_decay,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000433298,+,+,nonsense_mediated_decay,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000481048,+,+,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000466845,+,+,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000471667,+,+,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000483442,+,+,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000473177,+,+,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000466054,+,+,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000676147,ENST00000476664,+,+,nonsense_mediated_decay,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000443727,+,+,processed_transcript,nonsense_mediated_decay,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000438796,+,+,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000428136,+,+,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000414675,+,+,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000441090,+,+,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000334859,+,+,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000425562,+,+,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000493726,+,+,processed_transcript,processed_transcript,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000494069,+,+,processed_transcript,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000461674,+,+,processed_transcript,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000452660,+,+,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000433298,+,+,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000481048,+,+,processed_transcript,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000466845,+,+,processed_transcript,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000471667,+,+,processed_transcript,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000483442,+,+,processed_transcript,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000473177,+,+,processed_transcript,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000466054,+,+,processed_transcript,retained_intron,Outside transcript boundry,NA,NA
+RAB7A,LRCH3,ENST00000674593,ENST00000476664,+,+,processed_transcript,retained_intron,Outside transcript boundry,NA,NA

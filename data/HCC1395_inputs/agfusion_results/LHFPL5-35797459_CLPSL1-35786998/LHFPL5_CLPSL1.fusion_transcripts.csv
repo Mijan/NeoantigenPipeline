@@ -1,0 +1,13 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,5'_transcript_biotype,3'_transcript_biotype,Fusion_effect,Protein_length,Protein_weight_(kD)
+LHFPL5,CLPSL1,ENST00000651132,ENST00000373861,+,+,protein_coding,protein_coding,5UTR-exon,NA,NA
+LHFPL5,CLPSL1,ENST00000651132,ENST00000428710,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+LHFPL5,CLPSL1,ENST00000651994,ENST00000373861,+,+,nonsense_mediated_decay,protein_coding,Outside transcript boundry,NA,NA
+LHFPL5,CLPSL1,ENST00000651994,ENST00000428710,+,+,nonsense_mediated_decay,protein_coding,Outside transcript boundry,NA,NA
+LHFPL5,CLPSL1,ENST00000360215,ENST00000373861,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+LHFPL5,CLPSL1,ENST00000360215,ENST00000428710,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+LHFPL5,CLPSL1,ENST00000651676,ENST00000373861,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+LHFPL5,CLPSL1,ENST00000651676,ENST00000428710,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+LHFPL5,CLPSL1,ENST00000652718,ENST00000373861,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+LHFPL5,CLPSL1,ENST00000652718,ENST00000428710,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+LHFPL5,CLPSL1,ENST00000496656,ENST00000373861,+,+,processed_transcript,protein_coding,Outside transcript boundry,NA,NA
+LHFPL5,CLPSL1,ENST00000496656,ENST00000428710,+,+,processed_transcript,protein_coding,Outside transcript boundry,NA,NA

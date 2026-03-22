@@ -1,0 +1,5 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,5'_transcript_biotype,3'_transcript_biotype,Fusion_effect,Protein_length,Protein_weight_(kD)
+,CRYM-AS1,ENST00000549658,ENST00000338573,+,+,unprocessed_pseudogene,processed_transcript,Outside transcript boundry,NA,NA
+,CRYM-AS1,ENST00000549658,ENST00000561968,+,+,unprocessed_pseudogene,processed_transcript,Outside transcript boundry,NA,NA
+,CRYM-AS1,ENST00000549658,ENST00000444326,+,+,unprocessed_pseudogene,processed_transcript,Outside transcript boundry,NA,NA
+,CRYM-AS1,ENST00000549658,ENST00000637983,+,+,unprocessed_pseudogene,transcribed_unitary_pseudogene,exon-intron,NA,NA

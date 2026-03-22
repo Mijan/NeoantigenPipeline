@@ -1,0 +1,15 @@
+5'_gene,3'_gene,5'_transcript,3'_transcript,5'_strand,3'_strand,5'_transcript_biotype,3'_transcript_biotype,Fusion_effect,Protein_length,Protein_weight_(kD)
+E2F3,PKD2,ENST00000346618,ENST00000237596,+,+,protein_coding,protein_coding,out-of-frame,131,12.296688999999986
+E2F3,PKD2,ENST00000346618,ENST00000506727,+,+,protein_coding,retained_intron,intron-exon,NA,NA
+E2F3,PKD2,ENST00000346618,ENST00000506367,+,+,protein_coding,retained_intron,intron-exon,NA,NA
+E2F3,PKD2,ENST00000346618,ENST00000508588,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+E2F3,PKD2,ENST00000346618,ENST00000511337,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+E2F3,PKD2,ENST00000346618,ENST00000512858,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+E2F3,PKD2,ENST00000346618,ENST00000502363,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+E2F3,PKD2,ENST00000535432,ENST00000237596,+,+,protein_coding,protein_coding,out-of-frame,6,0.7438716999999999
+E2F3,PKD2,ENST00000535432,ENST00000506727,+,+,protein_coding,retained_intron,exon-exon,NA,NA
+E2F3,PKD2,ENST00000535432,ENST00000506367,+,+,protein_coding,retained_intron,exon-exon,NA,NA
+E2F3,PKD2,ENST00000535432,ENST00000508588,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
+E2F3,PKD2,ENST00000535432,ENST00000511337,+,+,protein_coding,processed_transcript,Outside transcript boundry,NA,NA
+E2F3,PKD2,ENST00000535432,ENST00000512858,+,+,protein_coding,retained_intron,Outside transcript boundry,NA,NA
+E2F3,PKD2,ENST00000535432,ENST00000502363,+,+,protein_coding,protein_coding,Outside transcript boundry,NA,NA
