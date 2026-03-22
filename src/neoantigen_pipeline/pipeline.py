@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import logging
 import time
-from pathlib import Path
 from typing import TYPE_CHECKING
 
 import pandas as pd
@@ -21,7 +20,10 @@ from neoantigen_pipeline.io.vcf_reader import VCFReader
 from neoantigen_pipeline.prediction.mhc_i import MHCIPredictor
 from neoantigen_pipeline.processing.expression_filter import ExpressionFilter
 from neoantigen_pipeline.processing.peptide_generator import PeptideGenerator
-from neoantigen_pipeline.results.neoantigen import NeoantigenCandidate, NeoantigenResultSet
+from neoantigen_pipeline.results.neoantigen import (
+    NeoantigenCandidate,
+    NeoantigenResultSet,
+)
 from neoantigen_pipeline.scoring.agretopicity import AgretopicityScorer
 from neoantigen_pipeline.scoring.ranking import RankingScorer
 
@@ -128,11 +130,14 @@ class NeoantigenPipeline:
         variants = vcf_reader.read_missense_variants()
         self._logger.info(
             "[Step 2/8] Found %d missense variants. Done in %.2fs",
-            len(variants), time.perf_counter() - t0,
+            len(variants),
+            time.perf_counter() - t0,
         )
 
         if not variants:
-            self._logger.warning("No missense variants found; returning empty result set.")
+            self._logger.warning(
+                "No missense variants found; returning empty result set."
+            )
             return NeoantigenResultSet([])
 
         # ------------------------------------------------------------------
@@ -144,7 +149,8 @@ class NeoantigenPipeline:
         variants = expr_filter.filter(variants)
         self._logger.info(
             "[Step 3/8] %d variants after expression filter. Done in %.2fs",
-            len(variants), time.perf_counter() - t0,
+            len(variants),
+            time.perf_counter() - t0,
         )
 
         if not variants:
@@ -159,7 +165,8 @@ class NeoantigenPipeline:
         proteome_db = ProteomeDB(proteome_path)
         self._logger.info(
             "[Step 4/8] Loaded %d sequences. Done in %.2fs",
-            proteome_db.size, time.perf_counter() - t0,
+            proteome_db.size,
+            time.perf_counter() - t0,
         )
 
         # ------------------------------------------------------------------
@@ -174,7 +181,9 @@ class NeoantigenPipeline:
             all_candidates.extend(candidates)
         self._logger.info(
             "[Step 5/8] Generated %d peptide candidates from %d variants. Done in %.2fs",
-            len(all_candidates), len(variants), time.perf_counter() - t0,
+            len(all_candidates),
+            len(variants),
+            time.perf_counter() - t0,
         )
 
         if not all_candidates:
@@ -196,7 +205,9 @@ class NeoantigenPipeline:
 
         self._logger.info(
             "[Step 6/8] Prediction complete (%d mutant, %d wildtype rows). Done in %.2fs",
-            len(mutant_df), len(wildtype_df), time.perf_counter() - t0,
+            len(mutant_df),
+            len(wildtype_df),
+            time.perf_counter() - t0,
         )
 
         if mutant_df.empty:
@@ -214,7 +225,9 @@ class NeoantigenPipeline:
             combined_df = agretopicity_scorer.annotate_dataframe(combined_df)
         else:
             combined_df["agretopicity"] = 1.0
-            self._logger.warning("wildtype_affinity column absent; agretopicity set to 1.0")
+            self._logger.warning(
+                "wildtype_affinity column absent; agretopicity set to 1.0"
+            )
 
         self._logger.info(
             "[Step 7/8] Agretopicity computed. Done in %.2fs",
@@ -233,7 +246,8 @@ class NeoantigenPipeline:
         ranked_df = ranking_scorer.rank(combined_df)
         self._logger.info(
             "[Step 8/8] Ranked %d candidates. Done in %.2fs",
-            len(ranked_df), time.perf_counter() - t0,
+            len(ranked_df),
+            time.perf_counter() - t0,
         )
 
         # ------------------------------------------------------------------
@@ -244,7 +258,8 @@ class NeoantigenPipeline:
         elapsed = time.perf_counter() - pipeline_start
         self._logger.info(
             "=== Pipeline complete: %d candidates in %.2fs ===",
-            len(result_set), elapsed,
+            len(result_set),
+            elapsed,
         )
 
         return result_set
@@ -280,7 +295,10 @@ class NeoantigenPipeline:
         )
 
         # If mutant_df has a wildtype_peptide column from metadata, use it
-        if "wildtype_sequence" in mutant_df.columns or "wildtype_peptide" in mutant_df.columns:
+        if (
+            "wildtype_sequence" in mutant_df.columns
+            or "wildtype_peptide" in mutant_df.columns
+        ):
             wt_col = (
                 "wildtype_peptide"
                 if "wildtype_peptide" in mutant_df.columns

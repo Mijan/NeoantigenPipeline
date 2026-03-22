@@ -83,7 +83,6 @@ class ExpressionLoader:
         Returns:
             ExpressionData populated from VCF annotations.
         """
-        import cyvcf2
 
         from neoantigen_pipeline.io.vcf_reader import VCFReader
 
@@ -119,7 +118,8 @@ class ExpressionLoader:
 
         self._logger.info(
             "Extracted expression data for %d genes from '%s'",
-            len(expression_map), vcf_path,
+            len(expression_map),
+            vcf_path,
         )
         return ExpressionData(expression_map)
 
@@ -149,7 +149,11 @@ class ExpressionLoader:
 
             # Identify gene and expression columns
             gene_col = next(
-                (i for i, h in enumerate(header) if h in ("gene", "gene_id", "gene_name")),
+                (
+                    i
+                    for i, h in enumerate(header)
+                    if h in ("gene", "gene_id", "gene_name")
+                ),
                 0,
             )
             expr_col = next(

@@ -6,7 +6,7 @@ once at startup via dependency injection. No global configuration state.
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
@@ -118,7 +118,9 @@ class PipelineConfig:
         try:
             config_text = Path(path).read_text(encoding="utf-8")
         except OSError as exc:
-            raise ConfigurationError(f"Cannot read config file '{path}': {exc}") from exc
+            raise ConfigurationError(
+                f"Cannot read config file '{path}': {exc}"
+            ) from exc
 
         try:
             raw: dict[str, Any] = yaml.safe_load(config_text) or {}
@@ -155,7 +157,9 @@ class PipelineConfig:
 
             sc_raw = raw.get("scoring", {})
             scoring = ScoringConfig(
-                presentation_score_weight=float(sc_raw.get("presentation_score_weight", 0.4)),
+                presentation_score_weight=float(
+                    sc_raw.get("presentation_score_weight", 0.4)
+                ),
                 agretopicity_weight=float(sc_raw.get("agretopicity_weight", 0.2)),
                 expression_weight=float(sc_raw.get("expression_weight", 0.2)),
                 vaf_weight=float(sc_raw.get("vaf_weight", 0.2)),
@@ -169,4 +173,6 @@ class PipelineConfig:
                 output_dir=str(raw.get("output_dir", "results")),
             )
         except (TypeError, ValueError, KeyError) as exc:
-            raise ConfigurationError(f"Invalid configuration in '{path}': {exc}") from exc
+            raise ConfigurationError(
+                f"Invalid configuration in '{path}': {exc}"
+            ) from exc

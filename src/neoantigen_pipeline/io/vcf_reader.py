@@ -25,12 +25,14 @@ CONSEQUENCE_INFRAME_INS: str = "inframe_insertion"
 CONSEQUENCE_INFRAME_DEL: str = "inframe_deletion"
 CONSEQUENCE_FRAMESHIFT: str = "frameshift_variant"
 
-SUPPORTED_CONSEQUENCES: frozenset[str] = frozenset({
-    CONSEQUENCE_MISSENSE,
-    CONSEQUENCE_INFRAME_INS,
-    CONSEQUENCE_INFRAME_DEL,
-    CONSEQUENCE_FRAMESHIFT,
-})
+SUPPORTED_CONSEQUENCES: frozenset[str] = frozenset(
+    {
+        CONSEQUENCE_MISSENSE,
+        CONSEQUENCE_INFRAME_INS,
+        CONSEQUENCE_INFRAME_DEL,
+        CONSEQUENCE_FRAMESHIFT,
+    }
+)
 
 _CONSEQUENCE_TO_VTYPE: dict[str, str] = {
     CONSEQUENCE_MISSENSE: "missense",
@@ -42,21 +44,57 @@ _CONSEQUENCE_TO_VTYPE: dict[str, str] = {
 # ── CSQ field defaults ───────────────────────────────────────────────────────
 
 _DEFAULT_CSQ_FIELDS: list[str] = [
-    "Allele", "Consequence", "IMPACT", "SYMBOL", "Gene", "Feature_type",
-    "Feature", "BIOTYPE", "EXON", "INTRON", "HGVSc", "HGVSp",
-    "cDNA_position", "CDS_position", "Protein_position", "Amino_acids",
-    "Codons", "Existing_variation", "DISTANCE", "STRAND", "FLAGS",
-    "SYMBOL_SOURCE", "HGNC_ID",
+    "Allele",
+    "Consequence",
+    "IMPACT",
+    "SYMBOL",
+    "Gene",
+    "Feature_type",
+    "Feature",
+    "BIOTYPE",
+    "EXON",
+    "INTRON",
+    "HGVSc",
+    "HGVSp",
+    "cDNA_position",
+    "CDS_position",
+    "Protein_position",
+    "Amino_acids",
+    "Codons",
+    "Existing_variation",
+    "DISTANCE",
+    "STRAND",
+    "FLAGS",
+    "SYMBOL_SOURCE",
+    "HGNC_ID",
 ]
 
 # ── Amino acid lookup ────────────────────────────────────────────────────────
 
 _AA_3TO1: dict[str, str] = {
-    "Ala": "A", "Arg": "R", "Asn": "N", "Asp": "D", "Cys": "C",
-    "Gln": "Q", "Glu": "E", "Gly": "G", "His": "H", "Ile": "I",
-    "Leu": "L", "Lys": "K", "Met": "M", "Phe": "F", "Pro": "P",
-    "Ser": "S", "Thr": "T", "Trp": "W", "Tyr": "Y", "Val": "V",
-    "Ter": "*", "Sec": "U", "Pyl": "O",
+    "Ala": "A",
+    "Arg": "R",
+    "Asn": "N",
+    "Asp": "D",
+    "Cys": "C",
+    "Gln": "Q",
+    "Glu": "E",
+    "Gly": "G",
+    "His": "H",
+    "Ile": "I",
+    "Leu": "L",
+    "Lys": "K",
+    "Met": "M",
+    "Phe": "F",
+    "Pro": "P",
+    "Ser": "S",
+    "Thr": "T",
+    "Trp": "W",
+    "Tyr": "Y",
+    "Val": "V",
+    "Ter": "*",
+    "Sec": "U",
+    "Pyl": "O",
 }
 
 # ── Compiled HGVSp regexes ───────────────────────────────────────────────────
@@ -68,9 +106,7 @@ _RE_FRAMESHIFT = re.compile(
 _RE_DEL_SINGLE = re.compile(r"^p\.([A-Z][a-z]{2})(\d+)del$")
 _RE_DEL_RANGE = re.compile(r"^p\.([A-Z][a-z]{2})(\d+)_([A-Z][a-z]{2})(\d+)del$")
 _RE_DUP_SINGLE = re.compile(r"^p\.([A-Z][a-z]{2})(\d+)dup$")
-_RE_INS = re.compile(
-    r"^p\.([A-Z][a-z]{2})(\d+)_([A-Z][a-z]{2})(\d+)ins([A-Za-z]+)$"
-)
+_RE_INS = re.compile(r"^p\.([A-Z][a-z]{2})(\d+)_([A-Z][a-z]{2})(\d+)ins([A-Za-z]+)$")
 
 
 def _three_to_one(three: str) -> str:
@@ -94,10 +130,11 @@ def _parse_aa_sequence(seq: str) -> str:
     Returns:
         Single-letter string, e.g. "GP".
     """
-    return "".join(_three_to_one(seq[i: i + 3]) for i in range(0, len(seq) - 2, 3))
+    return "".join(_three_to_one(seq[i : i + 3]) for i in range(0, len(seq) - 2, 3))
 
 
 # ── Internal HGVSp result ────────────────────────────────────────────────────
+
 
 @dataclass
 class _ParsedHGVSp:
@@ -111,6 +148,7 @@ class _ParsedHGVSp:
 
 
 # ── Public data class ────────────────────────────────────────────────────────
+
 
 @dataclass
 class SomaticVariant:
@@ -164,6 +202,7 @@ class SomaticVariant:
 
 
 # ── Reader ───────────────────────────────────────────────────────────────────
+
 
 class VCFReader:
     """Reads VEP-annotated VCF files and extracts somatic variants.
@@ -413,8 +452,11 @@ class VCFReader:
             aa_pos = int(m.group(2))
             aa_alt = _three_to_one(m.group(3)) if m.group(3) else ""
             return _ParsedHGVSp(
-                aa_ref=aa_ref, aa_alt=aa_alt, aa_pos=aa_pos,
-                variant_type="frameshift", is_frameshift=True,
+                aa_ref=aa_ref,
+                aa_alt=aa_alt,
+                aa_pos=aa_pos,
+                variant_type="frameshift",
+                is_frameshift=True,
             )
 
         # Inframe range deletion: p.Val600_Lys601del
@@ -423,7 +465,9 @@ class VCFReader:
             aa_ref = _three_to_one(m.group(1)) + _three_to_one(m.group(3))
             aa_pos = int(m.group(2))
             return _ParsedHGVSp(
-                aa_ref=aa_ref, aa_alt="", aa_pos=aa_pos,
+                aa_ref=aa_ref,
+                aa_alt="",
+                aa_pos=aa_pos,
                 variant_type="inframe_deletion",
             )
 
@@ -431,8 +475,10 @@ class VCFReader:
         m = _RE_DEL_SINGLE.match(hgvsp)
         if m:
             return _ParsedHGVSp(
-                aa_ref=_three_to_one(m.group(1)), aa_alt="",
-                aa_pos=int(m.group(2)), variant_type="inframe_deletion",
+                aa_ref=_three_to_one(m.group(1)),
+                aa_alt="",
+                aa_pos=int(m.group(2)),
+                variant_type="inframe_deletion",
             )
 
         # Inframe insertion: p.Ala600_Ala601insGlyPro
@@ -440,7 +486,9 @@ class VCFReader:
         if m:
             aa_alt = _parse_aa_sequence(m.group(5))
             return _ParsedHGVSp(
-                aa_ref="", aa_alt=aa_alt, aa_pos=int(m.group(2)),
+                aa_ref="",
+                aa_alt=aa_alt,
+                aa_pos=int(m.group(2)),
                 variant_type="inframe_insertion",
             )
 
@@ -449,7 +497,9 @@ class VCFReader:
         if m:
             aa = _three_to_one(m.group(1))
             return _ParsedHGVSp(
-                aa_ref="", aa_alt=aa, aa_pos=int(m.group(2)),
+                aa_ref="",
+                aa_alt=aa,
+                aa_pos=int(m.group(2)),
                 variant_type="inframe_insertion",
             )
 
@@ -521,7 +571,9 @@ class VCFReader:
                     if hgvsp_result is None:
                         self._logger.debug(
                             "Cannot parse HGVSp '%s' at %s:%d",
-                            hgvsp, record.CHROM, record.POS,
+                            hgvsp,
+                            record.CHROM,
+                            record.POS,
                         )
                         continue
 
@@ -553,25 +605,27 @@ class VCFReader:
 
                     wt = parsed.get("WildtypeProtein", "") or None
 
-                    variants.append(SomaticVariant(
-                        chrom=record.CHROM,
-                        pos=record.POS,
-                        ref=record.REF,
-                        alt=record.ALT[0] if record.ALT else "",
-                        gene=gene,
-                        transcript_id=transcript_id,
-                        protein_change=protein_change,
-                        aa_ref=hgvsp_result.aa_ref,
-                        aa_alt=hgvsp_result.aa_alt,
-                        aa_pos=hgvsp_result.aa_pos,
-                        vaf=vaf,
-                        expression=expression,
-                        consequence=matched,
-                        variant_type=variant_type,
-                        is_frameshift=is_frameshift,
-                        downstream_sequence=downstream_sequence,
-                        wildtype_protein_sequence=wt,
-                    ))
+                    variants.append(
+                        SomaticVariant(
+                            chrom=record.CHROM,
+                            pos=record.POS,
+                            ref=record.REF,
+                            alt=record.ALT[0] if record.ALT else "",
+                            gene=gene,
+                            transcript_id=transcript_id,
+                            protein_change=protein_change,
+                            aa_ref=hgvsp_result.aa_ref,
+                            aa_alt=hgvsp_result.aa_alt,
+                            aa_pos=hgvsp_result.aa_pos,
+                            vaf=vaf,
+                            expression=expression,
+                            consequence=matched,
+                            variant_type=variant_type,
+                            is_frameshift=is_frameshift,
+                            downstream_sequence=downstream_sequence,
+                            wildtype_protein_sequence=wt,
+                        )
+                    )
         except VCFParsingError:
             raise
         except Exception as exc:
@@ -583,7 +637,10 @@ class VCFReader:
 
         self._logger.info(
             "Parsed %d records; extracted %d variants of types %s (%d skipped)",
-            n_records, len(variants), sorted(consequences), n_skipped,
+            n_records,
+            len(variants),
+            sorted(consequences),
+            n_skipped,
         )
         return variants
 

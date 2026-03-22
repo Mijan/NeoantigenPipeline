@@ -11,8 +11,6 @@ import logging
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
-from neoantigen_pipeline.exceptions import ProteomeError
-
 if TYPE_CHECKING:
     from neoantigen_pipeline.config import PeptideGenerationConfig
     from neoantigen_pipeline.io.proteome import ProteomeDB
@@ -109,7 +107,8 @@ class PeptideGenerator:
         if wt_protein is None:
             self._logger.warning(
                 "Transcript '%s' not found in proteome; skipping %s",
-                variant.transcript_id, variant.protein_change,
+                variant.transcript_id,
+                variant.protein_change,
             )
             return []
 
@@ -118,7 +117,9 @@ class PeptideGenerator:
         if mut_idx < 0 or mut_idx >= len(wt_protein):
             self._logger.warning(
                 "Mutation position %d out of range for transcript '%s' (length %d)",
-                variant.aa_pos, variant.transcript_id, len(wt_protein),
+                variant.aa_pos,
+                variant.transcript_id,
+                len(wt_protein),
             )
             return []
 
@@ -127,12 +128,15 @@ class PeptideGenerator:
         if actual_ref != variant.aa_ref:
             self._logger.warning(
                 "Reference mismatch at %s pos %d: expected '%s', found '%s' in proteome",
-                variant.transcript_id, variant.aa_pos, variant.aa_ref, actual_ref,
+                variant.transcript_id,
+                variant.aa_pos,
+                variant.aa_ref,
+                actual_ref,
             )
             # Continue anyway — annotation may differ from proteome version
 
         # Build mutant protein
-        mut_protein = wt_protein[:mut_idx] + variant.aa_alt + wt_protein[mut_idx + 1:]
+        mut_protein = wt_protein[:mut_idx] + variant.aa_alt + wt_protein[mut_idx + 1 :]
 
         mutation_str = f"{variant.gene}_{variant.protein_change}"
         candidates: list[PeptideCandidate] = []

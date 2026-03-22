@@ -144,7 +144,10 @@ class HLAReader:
                 alleles.append(_normalise_allele(raw_allele))
             except HLAParsingError as exc:
                 self._logger.warning(
-                    "Skipping unparseable allele '%s' for %s: %s", raw_allele, locus, exc
+                    "Skipping unparseable allele '%s' for %s: %s",
+                    raw_allele,
+                    locus,
+                    exc,
                 )
 
         # Deduplicate while preserving order
@@ -157,7 +160,9 @@ class HLAReader:
 
         self._logger.info(
             "Read %d unique HLA-I alleles from '%s': %s",
-            len(unique_alleles), path, unique_alleles,
+            len(unique_alleles),
+            path,
+            unique_alleles,
         )
         return PatientHLA(class_i_alleles=tuple(unique_alleles))
 
@@ -193,7 +198,8 @@ class HLAReader:
 
         logger.info(
             "Manual HLA input: %d class-I, %d class-II alleles",
-            len(class_i), len(class_ii),
+            len(class_i),
+            len(class_ii),
         )
         return PatientHLA(
             class_i_alleles=tuple(class_i),

@@ -27,9 +27,7 @@ class AgretopicityScorer:
     def __init__(self) -> None:
         self._logger = logging.getLogger(type(self).__qualname__)
 
-    def compute(
-        self, mutant_affinity_nm: float, wildtype_affinity_nm: float
-    ) -> float:
+    def compute(self, mutant_affinity_nm: float, wildtype_affinity_nm: float) -> float:
         """Compute agretopicity for a single peptide pair.
 
         Args:
@@ -43,9 +41,7 @@ class AgretopicityScorer:
             A score > 1.0 indicates the mutant binds more strongly.
         """
         if mutant_affinity_nm == 0.0:
-            self._logger.debug(
-                "Mutant affinity is 0 nM; returning agretopicity=0.0"
-            )
+            self._logger.debug("Mutant affinity is 0 nM; returning agretopicity=0.0")
             return 0.0
         return wildtype_affinity_nm / mutant_affinity_nm
 

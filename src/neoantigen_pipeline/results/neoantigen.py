@@ -7,7 +7,7 @@ a result set container with serialisation to CSV and Pandas DataFrame.
 from __future__ import annotations
 
 import logging
-from dataclasses import dataclass, fields
+from dataclasses import dataclass
 from pathlib import Path
 
 import pandas as pd
@@ -167,9 +167,7 @@ class NeoantigenResultSet:
         required = set(NeoantigenCandidate.__slots__)
         missing = required - set(df.columns)
         if missing:
-            raise KeyError(
-                f"DataFrame is missing required columns: {missing}"
-            )
+            raise KeyError(f"DataFrame is missing required columns: {missing}")
 
         candidates: list[NeoantigenCandidate] = []
         for _, row in df.iterrows():

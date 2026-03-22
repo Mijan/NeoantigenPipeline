@@ -29,9 +29,7 @@ class SelfSimilarityFilter:
     def __init__(self) -> None:
         self._logger = logging.getLogger(type(self).__qualname__)
 
-    def compute_similarity(
-        self, peptide: str, proteome_db: ProteomeDB
-    ) -> float:
+    def compute_similarity(self, peptide: str, proteome_db: ProteomeDB) -> float:
         """Compute the maximum fractional identity to any proteome window.
 
         Scans every protein sequence in the proteome database with a window
@@ -104,6 +102,9 @@ class SelfSimilarityFilter:
         result = similarity >= threshold
         self._logger.debug(
             "Peptide '%s': self-similarity=%.3f, threshold=%.3f, self_similar=%s",
-            peptide, similarity, threshold, result,
+            peptide,
+            similarity,
+            threshold,
+            result,
         )
         return result

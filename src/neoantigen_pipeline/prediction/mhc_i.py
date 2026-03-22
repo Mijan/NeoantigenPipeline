@@ -148,15 +148,17 @@ class MHCIPredictor(BindingPredictor):
         )
 
         # Attach candidate metadata by merging on peptide sequence
-        meta = pd.DataFrame({
-            "peptide": peptides,
-            "mutation_str": [c.mutation_str for c in candidates],
-            "transcript_id": [c.transcript_id for c in candidates],
-            "gene": [c.gene for c in candidates],
-            "aa_pos": [c.aa_pos for c in candidates],
-            "n_flank": n_flanks,
-            "c_flank": c_flanks,
-        }).drop_duplicates(subset=["peptide"])
+        meta = pd.DataFrame(
+            {
+                "peptide": peptides,
+                "mutation_str": [c.mutation_str for c in candidates],
+                "transcript_id": [c.transcript_id for c in candidates],
+                "gene": [c.gene for c in candidates],
+                "aa_pos": [c.aa_pos for c in candidates],
+                "n_flank": n_flanks,
+                "c_flank": c_flanks,
+            }
+        ).drop_duplicates(subset=["peptide"])
 
         df = df.merge(meta, on="peptide", how="left")
         return df
