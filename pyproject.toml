@@ -30,6 +30,9 @@ fallback_version = "0.0.0"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-vv"
+markers = [
+    "integration: marks tests as integration tests requiring real data and optional model downloads",
+]
 
 [tool.mypy]
 python_version = "3.12"

@@ -3,3 +3,6 @@ pandas
 biopython
 torch
 wandb
+mhcflurry>=2.0
+cyvcf2
+pyyaml
