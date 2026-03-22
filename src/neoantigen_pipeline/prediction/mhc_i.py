@@ -7,7 +7,7 @@ wildtype peptide binding predictions with processing score support.
 from __future__ import annotations
 
 import logging
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 import pandas as pd
 
@@ -60,7 +60,7 @@ class MHCIPredictor(BindingPredictor):
         """
         return 1
 
-    def _load_predictor(self) -> object:
+    def _load_predictor(self) -> Any:
         """Load and cache the MHCflurry Class1PresentationPredictor.
 
         Returns:
@@ -73,7 +73,7 @@ class MHCIPredictor(BindingPredictor):
             return self._predictor
 
         try:
-            from mhcflurry import Class1PresentationPredictor  # type: ignore[import]
+            from mhcflurry import Class1PresentationPredictor
 
             self._logger.info("Loading MHCflurry Class1PresentationPredictor...")
             self._predictor = Class1PresentationPredictor.load()

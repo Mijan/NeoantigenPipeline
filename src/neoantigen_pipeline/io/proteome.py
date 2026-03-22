@@ -10,6 +10,7 @@ import gzip
 import logging
 import re
 from pathlib import Path
+from typing import IO
 
 from neoantigen_pipeline.exceptions import ProteomeError
 
@@ -72,7 +73,7 @@ class ProteomeDB:
 
         self._logger.info("Loaded %d protein sequences", len(self._sequences))
 
-    def _parse_fasta(self, fh: object) -> None:
+    def _parse_fasta(self, fh: IO[str]) -> None:
         """Iterate over a FASTA file handle and populate self._sequences.
 
         Both transcript ID and protein ID are used as keys to maximise
