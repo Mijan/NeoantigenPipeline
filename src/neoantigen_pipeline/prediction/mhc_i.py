@@ -79,9 +79,16 @@ class MHCIPredictor(BindingPredictor):
             self._predictor = Class1PresentationPredictor.load()
             self._logger.info("MHCflurry predictor loaded successfully")
         except ImportError as exc:
+            if "pkg_resources" in str(exc):
+                raise PredictionError(
+                    "mhcflurry requires 'pkg_resources', which was removed in setuptools>=71. "
+                    "Fix with: pip install 'setuptools<71'"
+                ) from exc
             raise PredictionError(
                 "mhcflurry is not installed. "
-                "Install with: pip install mhcflurry && mhcflurry-downloads fetch"
+                "Install with:\n"
+                "  pip install mhcflurry\n"
+                "  mhcflurry-downloads fetch"
             ) from exc
         except Exception as exc:
             raise PredictionError(f"Failed to load MHCflurry models: {exc}") from exc
@@ -188,6 +195,7 @@ class MHCIPredictor(BindingPredictor):
             return pd.DataFrame()
 
         wt_peptides = [c.wildtype_sequence for c in candidates]
+        mut_peptides = [c.peptide_sequence for c in candidates]
         n_flanks = [c.n_flank for c in candidates]
         c_flanks = [c.c_flank for c in candidates]
 
@@ -200,6 +208,14 @@ class MHCIPredictor(BindingPredictor):
         # Rename affinity column to distinguish wildtype predictions
         if "mhcflurry_affinity" in df.columns:
             df = df.rename(columns={"mhcflurry_affinity": "wildtype_affinity"})
+
+        # Add mutant peptide sequence so callers can join back to mutant results
+        # by matching wt_df["mut_peptide"] against results_df["peptide"]
+        if "peptide_num" in df.columns:
+            num_to_mut = dict(enumerate(mut_peptides))
+            df["mut_peptide"] = df["peptide_num"].map(num_to_mut)
+        else:
+            df.insert(0, "mut_peptide", mut_peptides)
 
         return df
 
