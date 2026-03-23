@@ -543,6 +543,7 @@ class VCFReader:
         n_records = 0
         n_skipped = 0
         n_unknown_aa = 0
+        record = None  # keep reference so it can be deleted before vcf.close()
 
         try:
             for record in vcf:
@@ -659,6 +660,7 @@ class VCFReader:
                 f"Error reading VCF '{self._vcf_path}': {exc}"
             ) from exc
         finally:
+            del record  # release C-backed Cython object before closing file handle
             vcf.close()
 
         if n_unknown_aa:
