@@ -76,7 +76,9 @@ class MHCflurryPredictor(MHCIPredictor):
         """
         return "MHCflurry2-Class1Presentation"
 
-    def predict(self, peptides: list[str], alleles: list[str]) -> list[BindingPrediction]:
+    def predict(
+        self, peptides: list[str], alleles: list[str]
+    ) -> list[BindingPrediction]:
         """Predict MHC-I binding without candidate-level metadata.
 
         Suitable for simple queries where only peptide sequences and alleles
@@ -255,7 +257,9 @@ class MHCflurryPredictor(MHCIPredictor):
         Returns:
             DataFrame with standardised column names per ``MHCFLURRY_RENAME_MAP``.
         """
-        actual_renames = {k: v for k, v in MHCFLURRY_RENAME_MAP.items() if k in df.columns}
+        actual_renames = {
+            k: v for k, v in MHCFLURRY_RENAME_MAP.items() if k in df.columns
+        }
         return df.rename(columns=actual_renames)
 
     def _row_to_binding_prediction(self, row: Any, peptide: str) -> BindingPrediction:
@@ -264,10 +268,16 @@ class MHCflurryPredictor(MHCIPredictor):
             peptide=str(row.get(COL_PEPTIDE, peptide)),
             best_allele=str(row.get(COL_BEST_ALLELE, "")),
             affinity_nm=float(row.get(COL_MHCFLURRY_AFFINITY, 0.0)),
-            affinity_percentile=float(row.get(COL_AFFINITY_PERCENTILE, _DEFAULT_AFFINITY_PERCENTILE)),
-            processing_score=float(row.get(COL_PROCESSING_SCORE, _DEFAULT_PROCESSING_SCORE)),
+            affinity_percentile=float(
+                row.get(COL_AFFINITY_PERCENTILE, _DEFAULT_AFFINITY_PERCENTILE)
+            ),
+            processing_score=float(
+                row.get(COL_PROCESSING_SCORE, _DEFAULT_PROCESSING_SCORE)
+            ),
             presentation_score=float(row.get(COL_PRESENTATION_SCORE, 0.0)),
-            presentation_percentile=float(row.get(COL_PRESENTATION_PERCENTILE, _DEFAULT_PRESENTATION_PERCENTILE)),
+            presentation_percentile=float(
+                row.get(COL_PRESENTATION_PERCENTILE, _DEFAULT_PRESENTATION_PERCENTILE)
+            ),
         )
 
     def _df_to_binding_predictions(
@@ -299,10 +309,19 @@ class MHCflurryPredictor(MHCIPredictor):
                     peptide=str(row.get(COL_PEPTIDE, c.peptide_sequence)),
                     best_allele=str(row.get(COL_BEST_ALLELE, "")),
                     affinity_nm=float(row.get(COL_MHCFLURRY_AFFINITY, 0.0)),
-                    affinity_percentile=float(row.get(COL_AFFINITY_PERCENTILE, _DEFAULT_AFFINITY_PERCENTILE)),
-                    processing_score=float(row.get(COL_PROCESSING_SCORE, _DEFAULT_PROCESSING_SCORE)),
+                    affinity_percentile=float(
+                        row.get(COL_AFFINITY_PERCENTILE, _DEFAULT_AFFINITY_PERCENTILE)
+                    ),
+                    processing_score=float(
+                        row.get(COL_PROCESSING_SCORE, _DEFAULT_PROCESSING_SCORE)
+                    ),
                     presentation_score=float(row.get(COL_PRESENTATION_SCORE, 0.0)),
-                    presentation_percentile=float(row.get(COL_PRESENTATION_PERCENTILE, _DEFAULT_PRESENTATION_PERCENTILE)),
+                    presentation_percentile=float(
+                        row.get(
+                            COL_PRESENTATION_PERCENTILE,
+                            _DEFAULT_PRESENTATION_PERCENTILE,
+                        )
+                    ),
                     mutation_str=c.mutation_str,
                     transcript_id=c.transcript_id,
                     gene=c.gene,

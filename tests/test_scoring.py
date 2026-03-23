@@ -124,16 +124,25 @@ class TestRankingScorer:
     def _make_candidates(self) -> list[ScoredCandidate]:
         return [
             _make_scored_candidate(
-                peptide="PEPTIDE1", presentation_score=0.9, agretopicity=5.0,
-                expression=100.0, vaf=0.5,
+                peptide="PEPTIDE1",
+                presentation_score=0.9,
+                agretopicity=5.0,
+                expression=100.0,
+                vaf=0.5,
             ),
             _make_scored_candidate(
-                peptide="PEPTIDE2", presentation_score=0.5, agretopicity=2.0,
-                expression=50.0, vaf=0.3,
+                peptide="PEPTIDE2",
+                presentation_score=0.5,
+                agretopicity=2.0,
+                expression=50.0,
+                vaf=0.3,
             ),
             _make_scored_candidate(
-                peptide="PEPTIDE3", presentation_score=0.1, agretopicity=1.0,
-                expression=10.0, vaf=0.1,
+                peptide="PEPTIDE3",
+                presentation_score=0.1,
+                agretopicity=1.0,
+                expression=10.0,
+                vaf=0.1,
             ),
         ]
 
@@ -171,13 +180,13 @@ class TestRankingScorer:
             scorer.rank([])
 
     def test_normalise_constant_returns_zeros(self):
-        scorer = RankingScorer(self._make_config())
+        _ = RankingScorer(self._make_config())
         arr = np.array([0.5, 0.5, 0.5])
         result = RankingScorer._normalise(arr)
         assert np.all(result == 0.0)
 
     def test_normalise_range(self):
-        scorer = RankingScorer(self._make_config())
+        _ = RankingScorer(self._make_config())
         arr = np.array([0.0, 0.5, 1.0])
         result = RankingScorer._normalise(arr)
         assert result[0] == pytest.approx(0.0)
@@ -188,12 +197,17 @@ class TestRankingScorer:
         scorer = RankingScorer(self._make_config())
         candidates = [
             _make_scored_candidate(
-                peptide="MYPEPTIDE", wildtype_peptide="MYPEPTIDX",
-                gene="BRCA1", mutation_str="BRCA1_p.Ala1Gly",
+                peptide="MYPEPTIDE",
+                wildtype_peptide="MYPEPTIDX",
+                gene="BRCA1",
+                mutation_str="BRCA1_p.Ala1Gly",
                 best_allele="HLA-B*57:01",
-                binding_affinity_nm=123.0, wildtype_affinity_nm=456.0,
-                processing_score=0.77, agretopicity=3.7,
-                expression=88.0, vaf=0.42,
+                binding_affinity_nm=123.0,
+                wildtype_affinity_nm=456.0,
+                processing_score=0.77,
+                agretopicity=3.7,
+                expression=88.0,
+                vaf=0.42,
             )
         ]
         result = scorer.rank(candidates)

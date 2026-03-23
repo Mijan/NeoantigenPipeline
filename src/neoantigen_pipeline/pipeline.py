@@ -20,7 +20,10 @@ from neoantigen_pipeline.io.proteome import ProteomeDB
 from neoantigen_pipeline.io.vcf_reader import VCFReader
 from neoantigen_pipeline.prediction.mhcflurry import MHCflurryPredictor
 from neoantigen_pipeline.prediction.results import ScoredCandidate
-from neoantigen_pipeline.results.neoantigen import NeoantigenCandidate, NeoantigenResultSet
+from neoantigen_pipeline.results.neoantigen import (
+    NeoantigenCandidate,
+    NeoantigenResultSet,
+)
 from neoantigen_pipeline.scoring.agretopicity import AgretopicityScorer
 from neoantigen_pipeline.scoring.ranking import RankingScorer
 
@@ -107,7 +110,9 @@ class NeoantigenPipeline:
 
         variants = self._step_read_variants(vcf_path)
         if not variants:
-            self._logger.warning("No missense variants found; returning empty result set.")
+            self._logger.warning(
+                "No missense variants found; returning empty result set."
+            )
             return NeoantigenResultSet([])
 
         variants = self._step_filter_expression(variants)
@@ -122,7 +127,9 @@ class NeoantigenPipeline:
             self._logger.warning("No peptide candidates generated.")
             return NeoantigenResultSet([])
 
-        mutant_results, wildtype_results = self._step_predict_binding(all_candidates, alleles)
+        mutant_results, wildtype_results = self._step_predict_binding(
+            all_candidates, alleles
+        )
         if not mutant_results:
             self._logger.warning("MHC prediction returned no results.")
             return NeoantigenResultSet([])
@@ -151,27 +158,40 @@ class NeoantigenPipeline:
         source = "config" if self._config.mhc_i.alleles else "HLA file"
         self._logger.info(
             "[Step 1/%d] Using %d alleles from %s. Done in %.2fs",
-            self._N_STEPS, len(alleles), source, time.perf_counter() - t0,
+            self._N_STEPS,
+            len(alleles),
+            source,
+            time.perf_counter() - t0,
         )
         return alleles
 
     def _step_read_variants(self, vcf_path: str) -> list[SomaticVariant]:
         t0 = time.perf_counter()
-        self._logger.info("[Step 2/%d] Reading missense variants from VCF...", self._N_STEPS)
+        self._logger.info(
+            "[Step 2/%d] Reading missense variants from VCF...", self._N_STEPS
+        )
         variants = VCFReader(vcf_path).read_missense_variants()
         self._logger.info(
             "[Step 2/%d] Found %d missense variants. Done in %.2fs",
-            self._N_STEPS, len(variants), time.perf_counter() - t0,
+            self._N_STEPS,
+            len(variants),
+            time.perf_counter() - t0,
         )
         return variants
 
-    def _step_filter_expression(self, variants: list[SomaticVariant]) -> list[SomaticVariant]:
+    def _step_filter_expression(
+        self, variants: list[SomaticVariant]
+    ) -> list[SomaticVariant]:
         t0 = time.perf_counter()
-        self._logger.info("[Step 3/%d] Filtering variants by expression...", self._N_STEPS)
+        self._logger.info(
+            "[Step 3/%d] Filtering variants by expression...", self._N_STEPS
+        )
         variants = ExpressionFilter(self._config.expression_filter).filter(variants)
         self._logger.info(
             "[Step 3/%d] %d variants after expression filter. Done in %.2fs",
-            self._N_STEPS, len(variants), time.perf_counter() - t0,
+            self._N_STEPS,
+            len(variants),
+            time.perf_counter() - t0,
         )
         return variants
 
@@ -181,7 +201,9 @@ class NeoantigenPipeline:
         proteome_db = ProteomeDB(proteome_path)
         self._logger.info(
             "[Step 4/%d] Loaded %d sequences. Done in %.2fs",
-            self._N_STEPS, proteome_db.size, time.perf_counter() - t0,
+            self._N_STEPS,
+            proteome_db.size,
+            time.perf_counter() - t0,
         )
         return proteome_db
 
@@ -196,7 +218,10 @@ class NeoantigenPipeline:
             all_candidates.extend(generator.generate(variant))
         self._logger.info(
             "[Step 5/%d] Generated %d candidates from %d variants. Done in %.2fs",
-            self._N_STEPS, len(all_candidates), len(variants), time.perf_counter() - t0,
+            self._N_STEPS,
+            len(all_candidates),
+            len(variants),
+            time.perf_counter() - t0,
         )
         return all_candidates
 
@@ -210,7 +235,10 @@ class NeoantigenPipeline:
         wildtype_results = predictor.predict_wildtype(candidates, alleles)
         self._logger.info(
             "[Step 6/%d] Prediction complete (%d mutant, %d wildtype). Done in %.2fs",
-            self._N_STEPS, len(mutant_results), len(wildtype_results), time.perf_counter() - t0,
+            self._N_STEPS,
+            len(mutant_results),
+            len(wildtype_results),
+            time.perf_counter() - t0,
         )
         return mutant_results, wildtype_results
 
@@ -256,16 +284,22 @@ class NeoantigenPipeline:
 
         self._logger.info(
             "[Step 7/%d] Assembled %d scored candidates. Done in %.2fs",
-            self._N_STEPS, len(scored), time.perf_counter() - t0,
+            self._N_STEPS,
+            len(scored),
+            time.perf_counter() - t0,
         )
         return scored
 
-    def _step_rank(self, candidates: list[ScoredCandidate]) -> list[NeoantigenCandidate]:
+    def _step_rank(
+        self, candidates: list[ScoredCandidate]
+    ) -> list[NeoantigenCandidate]:
         t0 = time.perf_counter()
         self._logger.info("[Step 8/%d] Ranking candidates...", self._N_STEPS)
         ranked = RankingScorer(self._config.scoring).rank(candidates)
         self._logger.info(
             "[Step 8/%d] Ranked %d candidates. Done in %.2fs",
-            self._N_STEPS, len(ranked), time.perf_counter() - t0,
+            self._N_STEPS,
+            len(ranked),
+            time.perf_counter() - t0,
         )
         return ranked

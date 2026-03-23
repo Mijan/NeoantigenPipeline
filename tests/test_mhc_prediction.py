@@ -46,7 +46,9 @@ def _make_candidate(
     )
 
 
-def _make_mhcflurry_result(peptides: list[str], allele: str = "HLA-A*02:01") -> pd.DataFrame:
+def _make_mhcflurry_result(
+    peptides: list[str], allele: str = "HLA-A*02:01"
+) -> pd.DataFrame:
     """Build a DataFrame matching MHCflurry's standardised output (one row per peptide)."""
     return pd.DataFrame(
         [

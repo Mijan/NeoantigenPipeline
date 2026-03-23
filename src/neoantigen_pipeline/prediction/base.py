@@ -26,7 +26,9 @@ class BindingPredictor(ABC):
     """
 
     @abstractmethod
-    def predict(self, peptides: list[str], alleles: list[str]) -> list[BindingPrediction]:
+    def predict(
+        self, peptides: list[str], alleles: list[str]
+    ) -> list[BindingPrediction]:
         """Predict MHC binding for a list of peptides and alleles.
 
         Args:

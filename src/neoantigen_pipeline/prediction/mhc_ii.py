@@ -29,7 +29,9 @@ class MHCIIPredictor(BindingPredictor):
         """
         return 2
 
-    def predict(self, peptides: list[str], alleles: list[str]) -> list[BindingPrediction]:
+    def predict(
+        self, peptides: list[str], alleles: list[str]
+    ) -> list[BindingPrediction]:
         """Not implemented.
 
         Args:
