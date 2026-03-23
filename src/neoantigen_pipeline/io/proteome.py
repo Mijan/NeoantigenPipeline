@@ -9,6 +9,7 @@ from __future__ import annotations
 import gzip
 import logging
 import re
+from collections.abc import Iterator
 from pathlib import Path
 from typing import IO
 
@@ -168,6 +169,18 @@ class ProteomeDB:
             Amino acid sequence string, or None if not found.
         """
         return self.get_sequence(transcript_id)
+
+    def iter_sequences(self) -> Iterator[str]:
+        """Iterate over all indexed protein sequences.
+
+        Yields each sequence string once per indexed key, which may include
+        duplicates when both versioned and unversioned IDs point to the same
+        sequence. Use this instead of accessing ``_sequences`` directly.
+
+        Yields:
+            Amino acid sequence strings.
+        """
+        yield from self._sequences.values()
 
     @property
     def size(self) -> int:

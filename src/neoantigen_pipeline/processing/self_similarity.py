@@ -11,6 +11,8 @@ from __future__ import annotations
 import logging
 from typing import TYPE_CHECKING
 
+from neoantigen_pipeline._constants import DEFAULT_SIMILARITY_THRESHOLD
+
 if TYPE_CHECKING:
     from neoantigen_pipeline.io.proteome import ProteomeDB
 
@@ -51,10 +53,7 @@ class SelfSimilarityFilter:
         k = len(peptide)
         max_identity: float = 0.0
 
-        # Access internal sequences dict for efficiency
-        sequences = proteome_db._sequences  # noqa: SLF001
-
-        for seq in sequences.values():
+        for seq in proteome_db.iter_sequences():
             if len(seq) < k:
                 continue
             identity = self._max_window_identity(peptide, seq, k)
@@ -85,7 +84,10 @@ class SelfSimilarityFilter:
         return best
 
     def is_self_similar(
-        self, peptide: str, proteome_db: ProteomeDB, threshold: float = 0.8
+        self,
+        peptide: str,
+        proteome_db: ProteomeDB,
+        threshold: float = DEFAULT_SIMILARITY_THRESHOLD,
     ) -> bool:
         """Determine whether a peptide is sufficiently similar to self-proteome.
 
@@ -93,7 +95,7 @@ class SelfSimilarityFilter:
             peptide: Query peptide amino acid sequence.
             proteome_db: Reference proteome database.
             threshold: Fractional identity threshold above which a peptide is
-                considered self-similar (default 0.8 = 80% identical).
+                considered self-similar (default ``DEFAULT_SIMILARITY_THRESHOLD``).
 
         Returns:
             True if the peptide's maximum self-similarity exceeds the threshold.

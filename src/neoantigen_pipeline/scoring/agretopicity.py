@@ -10,7 +10,14 @@ from __future__ import annotations
 
 import logging
 
+import numpy as np
 import pandas as pd
+
+from neoantigen_pipeline._constants import (
+    COL_AGRETOPICITY,
+    COL_MHCFLURRY_AFFINITY,
+    COL_WILDTYPE_AFFINITY,
+)
 
 
 class AgretopicityScorer:
@@ -49,6 +56,7 @@ class AgretopicityScorer:
         """Add an agretopicity column to a prediction DataFrame.
 
         The input DataFrame must contain:
+
         - ``mhcflurry_affinity``: mutant peptide IC50 in nM
         - ``wildtype_affinity``: wildtype peptide IC50 in nM
 
@@ -61,7 +69,7 @@ class AgretopicityScorer:
         Raises:
             KeyError: If required columns are absent.
         """
-        required = {"mhcflurry_affinity", "wildtype_affinity"}
+        required = {COL_MHCFLURRY_AFFINITY, COL_WILDTYPE_AFFINITY}
         missing = required - set(df.columns)
         if missing:
             raise KeyError(
@@ -70,10 +78,8 @@ class AgretopicityScorer:
             )
 
         df = df.copy()
-        df["agretopicity"] = df.apply(
-            lambda row: self.compute(
-                row["mhcflurry_affinity"], row["wildtype_affinity"]
-            ),
-            axis=1,
-        )
+        mut = df[COL_MHCFLURRY_AFFINITY].to_numpy(dtype=float)
+        wt = df[COL_WILDTYPE_AFFINITY].to_numpy(dtype=float)
+        # Where mutant affinity is zero, agretopicity is 0; otherwise wt/mut.
+        df[COL_AGRETOPICITY] = np.where(mut == 0.0, 0.0, wt / np.where(mut == 0.0, 1.0, mut))
         return df

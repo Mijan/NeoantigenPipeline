@@ -2,6 +2,7 @@
 
 All pipeline parameters are defined here as frozen dataclasses and loaded
 once at startup via dependency injection. No global configuration state.
+Default values are imported from ``_constants`` to avoid duplication.
 """
 
 from __future__ import annotations
@@ -12,6 +13,7 @@ from typing import Any
 
 import yaml
 
+from neoantigen_pipeline._constants import DEFAULT_FLANK_LENGTH, DEFAULT_PEPTIDE_LENGTHS
 from neoantigen_pipeline.exceptions import ConfigurationError
 
 
@@ -21,14 +23,14 @@ class MHCIPredictionConfig:
 
     Attributes:
         alleles: HLA alleles to predict for, e.g. ("HLA-A*02:01",).
-        peptide_lengths: Peptide lengths to tile. Defaults to 8-11mers.
+        peptide_lengths: Peptide lengths to tile. Defaults to 8–11mers.
         use_presentation_score: Whether to use mhcflurry presentation score.
         binding_affinity_threshold_nm: IC50 threshold in nM for binders.
         percentile_rank_threshold: Percentile rank threshold for binders.
     """
 
     alleles: tuple[str, ...]
-    peptide_lengths: tuple[int, ...] = (8, 9, 10, 11)
+    peptide_lengths: tuple[int, ...] = DEFAULT_PEPTIDE_LENGTHS
     use_presentation_score: bool = True
     binding_affinity_threshold_nm: float = 500.0
     percentile_rank_threshold: float = 2.0
@@ -44,9 +46,9 @@ class PeptideGenerationConfig:
         c_flank_length: Length of C-terminal flanking sequence for processing.
     """
 
-    peptide_lengths: tuple[int, ...] = (8, 9, 10, 11)
-    n_flank_length: int = 10
-    c_flank_length: int = 10
+    peptide_lengths: tuple[int, ...] = DEFAULT_PEPTIDE_LENGTHS
+    n_flank_length: int = DEFAULT_FLANK_LENGTH
+    c_flank_length: int = DEFAULT_FLANK_LENGTH
 
 
 @dataclass(frozen=True)
@@ -55,12 +57,10 @@ class ExpressionFilterConfig:
 
     Attributes:
         min_expression: Minimum expression level (TPM/FPKM) to retain a variant.
-        expression_field: VCF INFO field containing expression data.
         filter_missing: Whether to filter out variants with no expression data.
     """
 
     min_expression: float = 1.0
-    expression_field: str = "CSQ"
     filter_missing: bool = False
 
 
@@ -131,7 +131,9 @@ class PipelineConfig:
             mhc_i_raw = raw.get("mhc_i", {})
             mhc_i = MHCIPredictionConfig(
                 alleles=tuple(mhc_i_raw.get("alleles", [])),
-                peptide_lengths=tuple(mhc_i_raw.get("peptide_lengths", (8, 9, 10, 11))),
+                peptide_lengths=tuple(
+                    mhc_i_raw.get("peptide_lengths", DEFAULT_PEPTIDE_LENGTHS)
+                ),
                 use_presentation_score=mhc_i_raw.get("use_presentation_score", True),
                 binding_affinity_threshold_nm=float(
                     mhc_i_raw.get("binding_affinity_threshold_nm", 500.0)
@@ -143,15 +145,16 @@ class PipelineConfig:
 
             pg_raw = raw.get("peptide_generation", {})
             peptide_generation = PeptideGenerationConfig(
-                peptide_lengths=tuple(pg_raw.get("peptide_lengths", (8, 9, 10, 11))),
-                n_flank_length=int(pg_raw.get("n_flank_length", 10)),
-                c_flank_length=int(pg_raw.get("c_flank_length", 10)),
+                peptide_lengths=tuple(
+                    pg_raw.get("peptide_lengths", DEFAULT_PEPTIDE_LENGTHS)
+                ),
+                n_flank_length=int(pg_raw.get("n_flank_length", DEFAULT_FLANK_LENGTH)),
+                c_flank_length=int(pg_raw.get("c_flank_length", DEFAULT_FLANK_LENGTH)),
             )
 
             ef_raw = raw.get("expression_filter", {})
             expression_filter = ExpressionFilterConfig(
                 min_expression=float(ef_raw.get("min_expression", 1.0)),
-                expression_field=str(ef_raw.get("expression_field", "CSQ")),
                 filter_missing=bool(ef_raw.get("filter_missing", False)),
             )
 

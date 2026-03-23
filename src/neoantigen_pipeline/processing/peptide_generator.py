@@ -11,7 +11,7 @@ import logging
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
-_STANDARD_AA: frozenset[str] = frozenset("ACDEFGHIKLMNPQRSTVWY")
+from neoantigen_pipeline._constants import STANDARD_AA
 
 if TYPE_CHECKING:
     from neoantigen_pipeline.config import PeptideGenerationConfig
@@ -163,8 +163,8 @@ class PeptideGenerator:
         valid = [
             c
             for c in candidates
-            if all(aa in _STANDARD_AA for aa in c.peptide_sequence)
-            and all(aa in _STANDARD_AA for aa in c.wildtype_sequence)
+            if all(aa in STANDARD_AA for aa in c.peptide_sequence)
+            and all(aa in STANDARD_AA for aa in c.wildtype_sequence)
         ]
         n_filtered = len(candidates) - len(valid)
         if n_filtered:

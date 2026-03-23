@@ -13,6 +13,7 @@ from typing import TYPE_CHECKING
 
 import cyvcf2
 
+from neoantigen_pipeline._constants import STANDARD_AA
 from neoantigen_pipeline.exceptions import VCFParsingError
 
 if TYPE_CHECKING:
@@ -68,10 +69,6 @@ _DEFAULT_CSQ_FIELDS: list[str] = [
     "SYMBOL_SOURCE",
     "HGNC_ID",
 ]
-
-# ── Standard amino acid alphabet ─────────────────────────────────────────────
-
-_STANDARD_AA: frozenset[str] = frozenset("ACDEFGHIKLMNPQRSTVWY")
 
 # ── Amino acid lookup ────────────────────────────────────────────────────────
 
@@ -597,7 +594,7 @@ class VCFReader:
                     # Any bad residues in frameshift peptides are caught by the
                     # peptide-level filter in PeptideGenerator.
                     if matched == CONSEQUENCE_MISSENSE and any(
-                        aa and not all(c in _STANDARD_AA for c in aa)
+                        aa and not all(c in STANDARD_AA for c in aa)
                         for aa in (hgvsp_result.aa_ref, hgvsp_result.aa_alt)
                     ):
                         n_unknown_aa += 1

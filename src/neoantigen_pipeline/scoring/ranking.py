@@ -12,6 +12,15 @@ from typing import TYPE_CHECKING
 import numpy as np
 import pandas as pd
 
+from neoantigen_pipeline._constants import (
+    COL_AGRETOPICITY,
+    COL_COMPOSITE_RANK,
+    COL_COMPOSITE_SCORE,
+    COL_EXPRESSION,
+    COL_PRESENTATION_SCORE,
+    COL_VAF,
+)
+
 if TYPE_CHECKING:
     from neoantigen_pipeline.config import ScoringConfig
 
@@ -26,14 +35,6 @@ class RankingScorer:
     Args:
         config: Scoring configuration specifying component weights.
     """
-
-    # Column names expected / produced
-    _PRESENTATION_COL = "mhcflurry_presentation_score"
-    _AGRETOPICITY_COL = "agretopicity"
-    _EXPRESSION_COL = "expression"
-    _VAF_COL = "vaf"
-    _COMPOSITE_COL = "composite_score"
-    _RANK_COL = "composite_rank"
 
     def __init__(self, config: ScoringConfig) -> None:
         self._config = config
@@ -62,23 +63,16 @@ class RankingScorer:
 
         df = df.copy()
 
-        # Build normalised columns and compute weighted sum
-        composite = np.zeros(len(df))
+        composite = (
+            self._config.presentation_score_weight * self._normalise(df, COL_PRESENTATION_SCORE)
+            + self._config.agretopicity_weight * self._normalise(df, COL_AGRETOPICITY)
+            + self._config.expression_weight * self._normalise(df, COL_EXPRESSION)
+            + self._config.vaf_weight * self._normalise(df, COL_VAF)
+        )
 
-        composite += self._config.presentation_score_weight * self._normalise(
-            df, self._PRESENTATION_COL
-        )
-        composite += self._config.agretopicity_weight * self._normalise(
-            df, self._AGRETOPICITY_COL
-        )
-        composite += self._config.expression_weight * self._normalise(
-            df, self._EXPRESSION_COL
-        )
-        composite += self._config.vaf_weight * self._normalise(df, self._VAF_COL)
-
-        df[self._COMPOSITE_COL] = composite
-        df = df.sort_values(self._COMPOSITE_COL, ascending=False).reset_index(drop=True)
-        df[self._RANK_COL] = range(1, len(df) + 1)
+        df[COL_COMPOSITE_SCORE] = composite
+        df = df.sort_values(COL_COMPOSITE_SCORE, ascending=False).reset_index(drop=True)
+        df[COL_COMPOSITE_RANK] = range(1, len(df) + 1)
 
         self._logger.info("Ranked %d neoantigen candidates", len(df))
         return df
@@ -102,10 +96,9 @@ class RankingScorer:
             )
             return np.zeros(len(df))
 
-        values = df[column].fillna(0.0).astype(float).values
+        values = df[column].fillna(0.0).to_numpy(dtype=float)
         min_val = values.min()
-        max_val = values.max()
-        value_range = max_val - min_val
+        value_range = values.max() - min_val
 
         if value_range == 0.0:
             return np.zeros(len(df))

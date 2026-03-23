@@ -11,6 +11,21 @@ from typing import TYPE_CHECKING, Any
 
 import pandas as pd
 
+from neoantigen_pipeline._constants import (
+    COL_AA_POS,
+    COL_BEST_ALLELE,
+    COL_C_FLANK,
+    COL_GENE,
+    COL_MHCFLURRY_AFFINITY,
+    COL_MUTATION_STR,
+    COL_MUT_PEPTIDE,
+    COL_N_FLANK,
+    COL_PEPTIDE,
+    COL_PEPTIDE_NUM,
+    COL_TRANSCRIPT_ID,
+    COL_WILDTYPE_AFFINITY,
+    MHCFLURRY_RENAME_MAP,
+)
 from neoantigen_pipeline.exceptions import PredictionError
 from neoantigen_pipeline.prediction.base import BindingPredictor
 
@@ -40,7 +55,7 @@ class MHCIPredictor(BindingPredictor):
     def __init__(self, config: MHCIPredictionConfig) -> None:
         self._config = config
         self._logger = logging.getLogger(type(self).__qualname__)
-        self._predictor = None  # Lazy-loaded
+        self._predictor: Any = None  # Lazy-loaded
 
     @property
     def name(self) -> str:
@@ -154,21 +169,22 @@ class MHCIPredictor(BindingPredictor):
             c_flanks=c_flanks,
         )
 
-        # Attach candidate metadata by merging on peptide sequence
+        # Attach candidate metadata by merging on peptide sequence.
+        # drop_duplicates guards against the same mutant peptide being
+        # generated from different windows (same sequence, different position).
         meta = pd.DataFrame(
             {
-                "peptide": peptides,
-                "mutation_str": [c.mutation_str for c in candidates],
-                "transcript_id": [c.transcript_id for c in candidates],
-                "gene": [c.gene for c in candidates],
-                "aa_pos": [c.aa_pos for c in candidates],
-                "n_flank": n_flanks,
-                "c_flank": c_flanks,
+                COL_PEPTIDE: peptides,
+                COL_MUTATION_STR: [c.mutation_str for c in candidates],
+                COL_TRANSCRIPT_ID: [c.transcript_id for c in candidates],
+                COL_GENE: [c.gene for c in candidates],
+                COL_AA_POS: [c.aa_pos for c in candidates],
+                COL_N_FLANK: n_flanks,
+                COL_C_FLANK: c_flanks,
             }
-        ).drop_duplicates(subset=["peptide"])
+        ).drop_duplicates(subset=[COL_PEPTIDE])
 
-        df = df.merge(meta, on="peptide", how="left")
-        return df
+        return df.merge(meta, on=COL_PEPTIDE, how="left")
 
     def predict_wildtype(
         self,
@@ -185,8 +201,10 @@ class MHCIPredictor(BindingPredictor):
             alleles: List of HLA allele strings.
 
         Returns:
-            DataFrame with columns: peptide (wildtype), allele, and prediction
-            score columns. The "peptide" column contains wildtype sequences.
+            DataFrame with columns: peptide (wildtype), mut_peptide (mutant),
+            allele, and prediction score columns. The ``mut_peptide`` column
+            allows callers to join back to the mutant prediction results by
+            matching ``wt_df[COL_MUT_PEPTIDE]`` against ``mut_df[COL_PEPTIDE]``.
 
         Raises:
             PredictionError: If prediction fails.
@@ -205,17 +223,18 @@ class MHCIPredictor(BindingPredictor):
             n_flanks=n_flanks,
             c_flanks=c_flanks,
         )
-        # Rename affinity column to distinguish wildtype predictions
-        if "mhcflurry_affinity" in df.columns:
-            df = df.rename(columns={"mhcflurry_affinity": "wildtype_affinity"})
+
+        # Rename affinity column to distinguish wildtype predictions.
+        if COL_MHCFLURRY_AFFINITY in df.columns:
+            df = df.rename(columns={COL_MHCFLURRY_AFFINITY: COL_WILDTYPE_AFFINITY})
 
         # Add mutant peptide sequence so callers can join back to mutant results
-        # by matching wt_df["mut_peptide"] against results_df["peptide"]
-        if "peptide_num" in df.columns:
+        # by matching wt_df[COL_MUT_PEPTIDE] against mut_df[COL_PEPTIDE].
+        if COL_PEPTIDE_NUM in df.columns:
             num_to_mut = dict(enumerate(mut_peptides))
-            df["mut_peptide"] = df["peptide_num"].map(num_to_mut)
+            df[COL_MUT_PEPTIDE] = df[COL_PEPTIDE_NUM].map(num_to_mut)
         else:
-            df.insert(0, "mut_peptide", mut_peptides)
+            df.insert(0, COL_MUT_PEPTIDE, mut_peptides)
 
         return df
 
@@ -243,7 +262,7 @@ class MHCIPredictor(BindingPredictor):
         predictor = self._load_predictor()
 
         try:
-            kwargs: dict = {}
+            kwargs: dict[str, list[str]] = {}
             if n_flanks is not None:
                 kwargs["n_flanks"] = n_flanks
             if c_flanks is not None:
@@ -263,7 +282,7 @@ class MHCIPredictor(BindingPredictor):
         """Rename MHCflurry output columns to pipeline-standard names.
 
         MHCflurry uses its own column naming scheme; this method maps those
-        to the names expected by downstream scoring modules.
+        to the names defined in ``_constants.MHCFLURRY_RENAME_MAP``.
 
         Args:
             df: Raw MHCflurry prediction DataFrame.
@@ -271,14 +290,5 @@ class MHCIPredictor(BindingPredictor):
         Returns:
             DataFrame with standardised column names.
         """
-        rename_map = {
-            "affinity": "mhcflurry_affinity",
-            "affinity_percentile": "mhcflurry_affinity_percentile",
-            "processing_score": "mhcflurry_processing_score",
-            "presentation_score": "mhcflurry_presentation_score",
-        }
-        # Only rename columns that exist
-        actual_renames = {k: v for k, v in rename_map.items() if k in df.columns}
-        df = df.rename(columns=actual_renames)
-
-        return df
+        actual_renames = {k: v for k, v in MHCFLURRY_RENAME_MAP.items() if k in df.columns}
+        return df.rename(columns=actual_renames)
