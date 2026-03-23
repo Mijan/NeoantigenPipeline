@@ -102,7 +102,7 @@ _AA_3TO1: dict[str, str] = {
 
 _RE_MISSENSE = re.compile(r"^p\.([A-Z][a-z]{2})(\d+)([A-Z][a-z]{2})$")
 _RE_FRAMESHIFT = re.compile(
-    r"^p\.([A-Z][a-z]{2})(\d+)(?:([A-Z][a-z]{2}))?fs(?:\*(\d+|\?))?$"
+    r"^p\.([A-Z][a-z]{2})(\d+)(?:([A-Z][a-z]{2}))?fs(?:(?:\*|Ter)(\d+|\?))?$"
 )
 _RE_DEL_SINGLE = re.compile(r"^p\.([A-Z][a-z]{2})(\d+)del$")
 _RE_DEL_RANGE = re.compile(r"^p\.([A-Z][a-z]{2})(\d+)_([A-Z][a-z]{2})(\d+)del$")

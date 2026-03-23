@@ -189,6 +189,37 @@ class TestHGVSpParsing:
         assert r.aa_pos == 23
         assert r.is_frameshift is True
 
+    def test_frameshift_ter_notation_with_new_aa(self) -> None:
+        """fsTer (VEP Ter notation) must parse identically to fs* notation."""
+        r = self._reader()._parse_hgvsp("p.Lys778AsnfsTer2")
+        assert r is not None
+        assert r.aa_ref == "K"
+        assert r.aa_alt == "N"
+        assert r.aa_pos == 778
+        assert r.variant_type == "frameshift"
+        assert r.is_frameshift is True
+
+    def test_frameshift_ter_notation_without_new_aa(self) -> None:
+        r = self._reader()._parse_hgvsp("p.Val600fsTer3")
+        assert r is not None
+        assert r.aa_ref == "V"
+        assert r.aa_alt == ""
+        assert r.aa_pos == 600
+        assert r.is_frameshift is True
+
+    def test_frameshift_ter_notation_with_transcript_prefix(self) -> None:
+        r = self._reader()._parse_hgvsp("ENSP00000355726.5:p.Lys778AsnfsTer2")
+        assert r is not None
+        assert r.aa_ref == "K"
+        assert r.aa_pos == 778
+        assert r.is_frameshift is True
+
+    def test_frameshift_ter_unknown_stop_distance(self) -> None:
+        r = self._reader()._parse_hgvsp("p.Ala23SerfsTer?")
+        assert r is not None
+        assert r.aa_pos == 23
+        assert r.is_frameshift is True
+
     # Inframe deletion – single residue
     def test_inframe_del_single(self) -> None:
         r = self._reader()._parse_hgvsp("p.Val600del")
@@ -435,6 +466,26 @@ class TestReadVariants:
         assert v.variant_type == "frameshift"
         assert v.is_frameshift is True
         assert v.downstream_sequence is None  # not in CSQ fields here
+
+    @patch("cyvcf2.VCF")
+    def test_read_frameshift_ter_notation(self, _mock_cls) -> None:
+        """Frameshift with fsTer HGVSp (VEP default) must be loaded correctly.
+
+        Regression: _RE_FRAMESHIFT only matched fs* but not fsTer, causing
+        43 of 44 real frameshift records to be silently dropped.
+        """
+        reader = self._reader_with_fields()
+        csq = self._csq("frameshift_variant", "ENSP:p.Lys778AsnfsTer2")
+        mock_vcf = _mock_vcf_with_csq(csq)
+        with patch.object(reader, "_open_vcf", return_value=mock_vcf):
+            variants = reader.read_variants({CONSEQUENCE_FRAMESHIFT})
+        assert len(variants) == 1
+        v = variants[0]
+        assert v.aa_ref == "K"
+        assert v.aa_alt == "N"
+        assert v.aa_pos == 778
+        assert v.variant_type == "frameshift"
+        assert v.is_frameshift is True
 
     # Multi-type filter
     @patch("cyvcf2.VCF")
