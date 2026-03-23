@@ -12,7 +12,6 @@ peptide_generation:
 
 expression_filter:
   min_expression: 1.0
-  expression_field: "CSQ"
   filter_missing: false
 
 scoring:
