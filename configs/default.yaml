@@ -1,0 +1,24 @@
+mhc_i:
+  alleles: ["HLA-A*29:02", "HLA-B*45:01", "HLA-B*82:02", "HLA-C*06:02"]
+  peptide_lengths: [8, 9, 10, 11]
+  use_presentation_score: true
+  binding_affinity_threshold_nm: 500.0
+  percentile_rank_threshold: 2.0
+
+peptide_generation:
+  peptide_lengths: [8, 9, 10, 11]
+  n_flank_length: 10
+  c_flank_length: 10
+
+expression_filter:
+  min_expression: 1.0
+  expression_field: "CSQ"
+  filter_missing: false
+
+scoring:
+  presentation_score_weight: 0.4
+  agretopicity_weight: 0.2
+  expression_weight: 0.2
+  vaf_weight: 0.2
+
+output_dir: "results"
