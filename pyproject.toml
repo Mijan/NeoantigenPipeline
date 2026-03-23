@@ -21,6 +21,11 @@ where = ["src"]
 dependencies = { file = ["requirements.txt"] }
 optional-dependencies.test = { file = ["requirements-test.txt"] }
 
+[project.optional-dependencies]
+hlapollo = []  # no extra Python deps; requires the HLApollo binary (see README)
+esm = ["fair-esm>=2.0", "torch>=2.0", "h5py>=3.0"]
+all = ["neoantigen-pipeline[hlapollo,esm]"]
+
 [tool.setuptools_scm]
 version_scheme = "guess-next-dev"
 local_scheme = "node-and-date"
@@ -32,6 +37,7 @@ testpaths = ["tests"]
 addopts = "-vv"
 markers = [
     "integration: marks tests as integration tests requiring real data and optional model downloads",
+    "gpu: marks tests that require a CUDA-capable GPU",
 ]
 
 [tool.mypy]

@@ -84,6 +84,46 @@ class ScoringConfig:
 
 
 @dataclass(frozen=True)
+class HLApolloConfig:
+    """Configuration for HLApollo MHC-I prediction.
+
+    Attributes:
+        binary_path: Path to the HLA-Apollo executable.
+        docker_image: If set, run via Docker instead of native binary.
+        timeout_seconds: Max seconds to wait for the binary to finish.
+        batch_size: Number of peptide-allele pairs per subprocess call.
+        enabled: Whether to run HLApollo predictions (opt-in).
+    """
+
+    binary_path: str = "tools/HLApollo/HLA-Apollo"
+    docker_image: str | None = None
+    timeout_seconds: int = 600
+    batch_size: int = 5000
+    enabled: bool = False
+
+
+@dataclass(frozen=True)
+class ESMConfig:
+    """Configuration for ESM-2 protein language model embeddings.
+
+    Attributes:
+        model_name: ESM-2 model identifier.
+        cache_path: Path to the HDF5 embedding cache file.
+        device: PyTorch device ("auto", "cuda", or "cpu").
+        batch_size: Number of proteins to process per batch.
+        context_window: Residues on each side of the peptide for context.
+        enabled: Whether to compute ESM-2 embeddings (opt-in).
+    """
+
+    model_name: str = "esm2_t33_650M_UR50D"
+    cache_path: str = "results/esm_cache.h5"
+    device: str = "auto"
+    batch_size: int = 4
+    context_window: int = 15
+    enabled: bool = False
+
+
+@dataclass(frozen=True)
 class PipelineConfig:
     """Top-level configuration for the neoantigen prediction pipeline.
 
@@ -92,6 +132,8 @@ class PipelineConfig:
         peptide_generation: Peptide tiling settings.
         expression_filter: Expression filtering settings.
         scoring: Composite scoring settings.
+        hlapollo: HLApollo predictor settings (optional).
+        esm: ESM-2 embedding settings (optional).
         output_dir: Directory for output files.
     """
 
@@ -99,6 +141,8 @@ class PipelineConfig:
     peptide_generation: PeptideGenerationConfig
     expression_filter: ExpressionFilterConfig
     scoring: ScoringConfig
+    hlapollo: HLApolloConfig = HLApolloConfig()
+    esm: ESMConfig = ESMConfig()
     output_dir: str = "results"
 
     @classmethod
@@ -168,11 +212,32 @@ class PipelineConfig:
                 vaf_weight=float(sc_raw.get("vaf_weight", 0.2)),
             )
 
+            ha_raw = raw.get("hlapollo", {})
+            hlapollo = HLApolloConfig(
+                binary_path=str(ha_raw.get("binary_path", "tools/HLApollo/HLA-Apollo")),
+                docker_image=ha_raw.get("docker_image") or None,
+                timeout_seconds=int(ha_raw.get("timeout_seconds", 600)),
+                batch_size=int(ha_raw.get("batch_size", 5000)),
+                enabled=bool(ha_raw.get("enabled", False)),
+            )
+
+            esm_raw = raw.get("esm", {})
+            esm = ESMConfig(
+                model_name=str(esm_raw.get("model_name", "esm2_t33_650M_UR50D")),
+                cache_path=str(esm_raw.get("cache_path", "results/esm_cache.h5")),
+                device=str(esm_raw.get("device", "auto")),
+                batch_size=int(esm_raw.get("batch_size", 4)),
+                context_window=int(esm_raw.get("context_window", 15)),
+                enabled=bool(esm_raw.get("enabled", False)),
+            )
+
             return cls(
                 mhc_i=mhc_i,
                 peptide_generation=peptide_generation,
                 expression_filter=expression_filter,
                 scoring=scoring,
+                hlapollo=hlapollo,
+                esm=esm,
                 output_dir=str(raw.get("output_dir", "results")),
             )
         except (TypeError, ValueError, KeyError) as exc:

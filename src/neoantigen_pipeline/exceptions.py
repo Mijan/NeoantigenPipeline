@@ -40,6 +40,14 @@ class PredictionError(NeoantigenPipelineError):
     """
 
 
+class PredictorNotInstalledError(PredictionError):
+    """Raised when a required predictor binary or package is not installed.
+
+    Specialisation of ``PredictionError`` for missing external dependencies
+    such as the HLApollo binary or the ESM-2 Python package.
+    """
+
+
 class ConfigurationError(NeoantigenPipelineError):
     """Raised when pipeline configuration is invalid or missing required fields.
 

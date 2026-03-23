@@ -63,6 +63,66 @@ tox -e format    # auto-format
 
 ------------------------------------------------------------------------
 
+## Optional predictors
+
+### HLApollo predictor
+
+HLApollo is a transformer-based MHC-I presentation predictor from Genentech.
+It is distributed as a compiled Linux binary and requires separate installation.
+
+**System dependencies:**
+- Linux (x86_64)
+- libatlas or openblas (`sudo pacman -S openblas` on Arch, `sudo apt-get install libatlas-base-dev` on Debian/Ubuntu)
+- git-lfs (`sudo pacman -S git-lfs` / `sudo apt-get install git-lfs`)
+
+**Installation:**
+```bash
+git lfs install
+mkdir -p tools
+cd tools
+git clone https://github.com/Genentech/HLApollo.git
+chmod +x HLApollo/HLA-Apollo
+cd ..
+```
+
+**Verify:**
+```bash
+./tools/HLApollo/HLA-Apollo tools/HLApollo/example.csv /tmp/hlapollo_test.csv
+```
+
+**Docker alternative (non-Linux or if binary fails):**
+```bash
+cd tools/HLApollo
+docker build -t hla-apollo .
+cd ../..
+```
+
+Then set `hlapollo.docker_image: "hla-apollo"` in your config.
+
+**Enable in config:**
+Set `hlapollo.enabled: true` in `configs/default.yaml` or pass programmatically.
+
+------------------------------------------------------------------------
+
+### ESM-2 protein embeddings (optional)
+
+ESM-2 protein language model embeddings provide structural context features
+for improved neoantigen ranking.
+
+**Installation:**
+```bash
+pip install 'neoantigen-pipeline[esm]'
+```
+
+This installs `fair-esm`, `torch`, and `h5py`. A CUDA-capable GPU is recommended
+but not required (CPU inference works but is slower).
+
+**Enable in config:**
+Set `esm.enabled: true` in `configs/default.yaml`.
+Embeddings are cached to `results/esm_cache.h5` after first computation.
+
+------------------------------------------------------------------------
+
 ## License
 
 MIT License © 2026 Jan Mikelson

@@ -20,4 +20,19 @@ scoring:
   expression_weight: 0.2
   vaf_weight: 0.2
 
+hlapollo:
+  binary_path: "tools/HLApollo/HLA-Apollo"
+  docker_image: null
+  timeout_seconds: 600
+  batch_size: 5000
+  enabled: false
+
+esm:
+  model_name: "esm2_t33_650M_UR50D"
+  cache_path: "results/esm_cache.h5"
+  device: "auto"
+  batch_size: 4
+  context_window: 15
+  enabled: false
+
 output_dir: "results"
