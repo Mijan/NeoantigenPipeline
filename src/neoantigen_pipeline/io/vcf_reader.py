@@ -69,6 +69,10 @@ _DEFAULT_CSQ_FIELDS: list[str] = [
     "HGNC_ID",
 ]
 
+# ── Standard amino acid alphabet ─────────────────────────────────────────────
+
+_STANDARD_AA: frozenset[str] = frozenset("ACDEFGHIKLMNPQRSTVWY")
+
 # ── Amino acid lookup ────────────────────────────────────────────────────────
 
 _AA_3TO1: dict[str, str] = {
@@ -541,6 +545,7 @@ class VCFReader:
         variants: list[SomaticVariant] = []
         n_records = 0
         n_skipped = 0
+        n_unknown_aa = 0
 
         try:
             for record in vcf:
@@ -580,6 +585,30 @@ class VCFReader:
                     protein_change = hgvsp if hgvsp.startswith("p.") else f"p.{hgvsp}"
                     if ":" in protein_change:
                         protein_change = protein_change.split(":", 1)[1]
+
+                    # Skip missense variants with unknown or non-standard amino
+                    # acids.  _three_to_one returns the raw 3-letter code when
+                    # the residue is absent from _AA_3TO1 (e.g. "Xaa"), and
+                    # maps stop codons to '*' and selenocysteine to 'U' — none
+                    # of which are valid missense substitutions.
+                    # Frameshifts are exempt: aa_alt may legitimately be '*'
+                    # (immediate stop, e.g. p.Glu11Ter) while the usable
+                    # peptide sequence comes from the downstream_sequence field.
+                    # Any bad residues in frameshift peptides are caught by the
+                    # peptide-level filter in PeptideGenerator.
+                    if matched == CONSEQUENCE_MISSENSE and any(
+                        aa and not all(c in _STANDARD_AA for c in aa)
+                        for aa in (hgvsp_result.aa_ref, hgvsp_result.aa_alt)
+                    ):
+                        n_unknown_aa += 1
+                        self._logger.debug(
+                            "Skipping variant with non-standard amino acid(s) "
+                            "in '%s' at %s:%d",
+                            hgvsp,
+                            record.CHROM,
+                            record.POS,
+                        )
+                        continue
 
                     gene = parsed.get("SYMBOL", "") or parsed.get("Gene", "")
                     transcript_id = parsed.get("Feature", "")
@@ -635,12 +664,21 @@ class VCFReader:
         finally:
             vcf.close()
 
+        if n_unknown_aa:
+            self._logger.warning(
+                "Skipped %d variant annotation(s) with non-standard amino acids "
+                "(stop codons, selenocysteine, or unrecognised residues); "
+                "these cannot produce valid peptide candidates",
+                n_unknown_aa,
+            )
         self._logger.info(
-            "Parsed %d records; extracted %d variants of types %s (%d skipped)",
+            "Parsed %d records; extracted %d variants of types %s "
+            "(%d skipped, %d filtered for non-standard amino acids)",
             n_records,
             len(variants),
             sorted(consequences),
             n_skipped,
+            n_unknown_aa,
         )
         return variants
 

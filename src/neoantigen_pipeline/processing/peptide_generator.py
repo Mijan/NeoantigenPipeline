@@ -11,6 +11,8 @@ import logging
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
+_STANDARD_AA: frozenset[str] = frozenset("ACDEFGHIKLMNPQRSTVWY")
+
 if TYPE_CHECKING:
     from neoantigen_pipeline.config import PeptideGenerationConfig
     from neoantigen_pipeline.io.proteome import ProteomeDB
@@ -155,7 +157,26 @@ class PeptideGenerator:
                 )
             )
 
-        return candidates
+        # Filter out candidates whose peptide or wildtype sequence contains
+        # non-standard residues (e.g. 'X', '*', 'U') that binding predictors
+        # cannot handle.
+        valid = [
+            c
+            for c in candidates
+            if all(aa in _STANDARD_AA for aa in c.peptide_sequence)
+            and all(aa in _STANDARD_AA for aa in c.wildtype_sequence)
+        ]
+        n_filtered = len(candidates) - len(valid)
+        if n_filtered:
+            self._logger.warning(
+                "%s: filtered %d peptide candidate(s) containing non-standard "
+                "amino acids (kept %d)",
+                mutation_str,
+                n_filtered,
+                len(valid),
+            )
+
+        return valid
 
     def _tile_windows(
         self,
