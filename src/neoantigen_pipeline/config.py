@@ -96,8 +96,8 @@ class HLApolloConfig:
     """
 
     binary_path: str = "tools/HLApollo/HLA-Apollo"
-    docker_image: str | None = None
-    timeout_seconds: int = 600
+    docker_image: str | None = "hla-apollo"
+    timeout_seconds: int = 3600
     batch_size: int = 5000
     enabled: bool = False
 

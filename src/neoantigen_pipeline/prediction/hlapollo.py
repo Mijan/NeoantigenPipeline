@@ -96,8 +96,8 @@ class HLApolloPredictor(MHCIPredictor):
     def __init__(
         self,
         binary_path: str = "tools/HLApollo/HLA-Apollo",
-        docker_image: str | None = None,
-        timeout_seconds: int = 600,
+        docker_image: str | None = "hla-apollo",
+        timeout_seconds: int = 3600,
         batch_size: int = 5000,
     ) -> None:
         self._binary_path = str(binary_path)
@@ -290,21 +290,32 @@ class HLApolloPredictor(MHCIPredictor):
     # ── Private helpers ──────────────────────────────────────────────────────
 
     def _check_binary(self) -> None:
-        """Verify the HLApollo binary exists.
+        """Verify the HLApollo Docker image or binary exists.
 
         Raises:
-            PredictorNotInstalledError: If the binary is not found at
-                ``binary_path``.
+            PredictorNotInstalledError: If the Docker image or binary is not found.
         """
         if self._docker_image:
-            return  # Docker: binary check not applicable
+            result = subprocess.run(
+                ["docker", "image", "inspect", self._docker_image],
+                capture_output=True,
+            )
+            if result.returncode != 0:
+                raise PredictorNotInstalledError(
+                    f"Docker image '{self._docker_image}' not found. "
+                    "Build it with:\n"
+                    "  cd tools/HLApollo && docker build -t hla-apollo . && cd ../.."
+                )
+            return
         if not Path(self._binary_path).is_file():
             raise PredictorNotInstalledError(
                 f"HLApollo binary not found at '{self._binary_path}'. "
                 "Install with:\n"
                 "  mkdir -p tools && cd tools\n"
                 "  git clone https://github.com/Genentech/HLApollo.git\n"
-                "  chmod +x HLApollo/HLA-Apollo"
+                "  chmod +x HLApollo/HLA-Apollo\n"
+                "Then build Docker image:\n"
+                "  cd HLApollo && docker build -t hla-apollo . && cd ../.."
             )
 
     def _build_input_df(
@@ -395,13 +406,19 @@ class HLApolloPredictor(MHCIPredictor):
             chunk.to_csv(in_path, index=False)
 
             if self._docker_image:
+                binary_path = Path(self._binary_path)
+                if not binary_path.is_absolute():
+                    # Resolve relative to project root, not CWD (which may be
+                    # a notebook subdirectory when run via nbconvert).
+                    # __file__ is src/neoantigen_pipeline/prediction/hlapollo.py
+                    project_root = Path(__file__).parents[3]
+                    binary_path = project_root / binary_path
+                repo_dir = str(binary_path.parent)
                 cmd = [
-                    "docker",
-                    "run",
-                    "--rm",
-                    "-v",
-                    f"{tmpdir}:/data",
-                    self._docker_image,
+                    "docker", "run", "--rm",
+                    "-v", f"{repo_dir}:/home/HLA-Apollo",
+                    "-v", f"{tmpdir}:/data",
+                    "-t", self._docker_image,
                     "/home/HLA-Apollo/HLA-Apollo",
                     "/data/input.csv",
                     "/data/output.csv",
@@ -414,21 +431,26 @@ class HLApolloPredictor(MHCIPredictor):
                     cmd,
                     check=True,
                     timeout=self._timeout_seconds,
-                    capture_output=True,
                 )
             except FileNotFoundError as exc:
                 raise PredictorNotInstalledError(
                     f"HLApollo binary not found: {exc}"
                 ) from exc
             except subprocess.CalledProcessError as exc:
-                stderr = exc.stderr.decode(errors="replace") if exc.stderr else ""
                 raise PredictionError(
-                    f"HLApollo subprocess failed (exit {exc.returncode}): {stderr}"
+                    f"HLApollo subprocess failed (exit {exc.returncode})"
                 ) from exc
             except subprocess.TimeoutExpired as exc:
                 raise PredictionError(
                     f"HLApollo timed out after {self._timeout_seconds}s"
                 ) from exc
+
+            if not os.path.exists(out_path):
+                raise PredictionError(
+                    "HLApollo exited successfully but did not write an output file. "
+                    "Run the binary manually to check for errors:\n"
+                    f"  {self._binary_path} <input.csv> <output.csv>"
+                )
 
             try:
                 return pd.read_csv(out_path)

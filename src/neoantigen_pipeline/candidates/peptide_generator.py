@@ -125,20 +125,43 @@ class PeptideGenerator:
             )
             return []
 
-        # Verify reference amino acid matches the proteome
-        actual_ref = wt_protein[mut_idx]
-        if actual_ref != variant.aa_ref:
-            self._logger.warning(
-                "Reference mismatch at %s pos %d: expected '%s', found '%s' in proteome",
-                variant.transcript_id,
-                variant.aa_pos,
-                variant.aa_ref,
-                actual_ref,
-            )
-            # Continue anyway — annotation may differ from proteome version
+        # Verify reference amino acid(s) and build mutant protein.
+        # Handling differs by variant type because inframe indels have
+        # multi-character aa_ref / aa_alt and affect more than one position.
+        if variant.variant_type == "inframe_deletion":
+            ref_len = len(variant.aa_ref)
+            if variant.aa_ref and mut_idx + ref_len <= len(wt_protein):
+                actual_ref = wt_protein[mut_idx : mut_idx + ref_len]
+                if actual_ref != variant.aa_ref:
+                    self._logger.warning(
+                        "Reference mismatch at %s pos %d: expected '%s', found '%s' in proteome",
+                        variant.transcript_id,
+                        variant.aa_pos,
+                        variant.aa_ref,
+                        actual_ref,
+                    )
+            mut_protein = wt_protein[:mut_idx] + wt_protein[mut_idx + ref_len :]
 
-        # Build mutant protein
-        mut_protein = wt_protein[:mut_idx] + variant.aa_alt + wt_protein[mut_idx + 1 :]
+        elif variant.variant_type == "inframe_insertion":
+            # aa_ref is empty for pure insertions — nothing to validate.
+            # Inserted residues go after mut_idx (between aa_pos and aa_pos+1).
+            mut_protein = (
+                wt_protein[: mut_idx + 1] + variant.aa_alt + wt_protein[mut_idx + 1 :]
+            )
+
+        else:
+            # missense and frameshift: single-position reference check.
+            actual_ref = wt_protein[mut_idx]
+            if actual_ref != variant.aa_ref:
+                self._logger.warning(
+                    "Reference mismatch at %s pos %d: expected '%s', found '%s' in proteome",
+                    variant.transcript_id,
+                    variant.aa_pos,
+                    variant.aa_ref,
+                    actual_ref,
+                )
+            # Continue anyway — annotation may differ from proteome version
+            mut_protein = wt_protein[:mut_idx] + variant.aa_alt + wt_protein[mut_idx + 1 :]
 
         mutation_str = f"{variant.gene}_{variant.protein_change}"
         candidates: list[PeptideCandidate] = []
@@ -208,13 +231,14 @@ class PeptideGenerator:
             List of PeptideCandidate instances for this k and mutation.
         """
         protein_len = len(wt_protein)
-        if k > protein_len:
+        if k > protein_len or k > len(mut_protein):
             return []
 
         # Window start range: mut_idx must be in [start, start+k-1]
         # => start in [mut_idx - k + 1, mut_idx]
+        # Cap at both proteins' lengths so slices of length k are always valid.
         first_start = max(0, mut_idx - k + 1)
-        last_start = min(protein_len - k, mut_idx)
+        last_start = min(protein_len - k, len(mut_protein) - k, mut_idx)
 
         candidates: list[PeptideCandidate] = []
 

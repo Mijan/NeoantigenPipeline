@@ -22,8 +22,8 @@ scoring:
 
 hlapollo:
   binary_path: "tools/HLApollo/HLA-Apollo"
-  docker_image: null
-  timeout_seconds: 600
+  docker_image: "hla-apollo"
+  timeout_seconds: 3600
   batch_size: 5000
   enabled: false
 

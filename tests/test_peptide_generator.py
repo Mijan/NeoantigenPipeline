@@ -6,7 +6,7 @@ from unittest.mock import MagicMock
 
 from neoantigen_pipeline.config import PeptideGenerationConfig
 from neoantigen_pipeline.io.vcf_reader import SomaticVariant
-from neoantigen_pipeline.processing.peptide_generator import (
+from neoantigen_pipeline.candidates.peptide_generator import (
     PeptideCandidate,
     PeptideGenerator,
 )
@@ -18,6 +18,8 @@ def _make_variant(
     aa_pos: int = 600,
     gene: str = "BRAF",
     transcript_id: str = "ENST00000288602",
+    variant_type: str = "missense",
+    consequence: str = "missense_variant",
 ) -> SomaticVariant:
     return SomaticVariant(
         chrom="7",
@@ -26,14 +28,14 @@ def _make_variant(
         alt="T",
         gene=gene,
         transcript_id=transcript_id,
-        variant_type="missense",
-        protein_change=f"p.{aa_ref}600{aa_alt}",
+        variant_type=variant_type,
+        protein_change=f"p.{aa_ref}{aa_pos}{aa_alt}",
         aa_ref=aa_ref,
         aa_alt=aa_alt,
         aa_pos=aa_pos,
         vaf=0.45,
         expression=10.0,
-        consequence="missense_variant",
+        consequence=consequence,
     )
 
 
@@ -191,3 +193,120 @@ class TestPeptideGenerator:
         candidates = gen.generate(variant)
         lengths = {c.peptide_length for c in candidates}
         assert lengths == {8, 9, 10}
+
+
+class TestInframeIndels:
+    """Tests for inframe insertion and deletion handling."""
+
+    def _make_generator(self, lengths=(9,)) -> PeptideGenerator:
+        config = PeptideGenerationConfig(
+            peptide_lengths=lengths, n_flank_length=0, c_flank_length=0
+        )
+        # 30aa protein: positions 1-30
+        protein = "MADTEFGHIKLMNPQRSTVWYACDEFGHI"  # 29aa
+        protein = protein + "K"  # 30aa
+        proteome = _make_proteome(protein)
+        return PeptideGenerator(config, proteome), protein
+
+    def test_single_residue_inframe_deletion(self):
+        """Single-residue deletion: mutant is 1aa shorter than wildtype."""
+        # 20aa protein with V at position 10
+        protein = "ACDEFGHIKL" + "V" + "MNPQRSTVWY"
+        proteome = _make_proteome(protein)
+        config = PeptideGenerationConfig(
+            peptide_lengths=(9,), n_flank_length=0, c_flank_length=0
+        )
+        gen = PeptideGenerator(config, proteome)
+        variant = _make_variant(
+            aa_ref="V", aa_alt="", aa_pos=11,
+            variant_type="inframe_deletion", consequence="inframe_deletion",
+        )
+        candidates = gen.generate(variant)
+        assert len(candidates) > 0
+        # Mutant peptides should be length 9; wildtype peptides also 9
+        for c in candidates:
+            assert len(c.peptide_sequence) == 9
+            assert len(c.wildtype_sequence) == 9
+        # Mutant and wildtype sequences should differ (deletion shifts sequence)
+        peptide_seqs = {c.peptide_sequence for c in candidates}
+        wt_seqs = {c.wildtype_sequence for c in candidates}
+        assert peptide_seqs != wt_seqs
+
+    def test_multi_residue_inframe_deletion(self):
+        """Two-residue deletion: mutant is 2aa shorter; reference validation passes."""
+        # 25aa protein with VK at positions 10-11
+        protein = "ACDEFGHIKL" + "VK" + "MNPQRSTVWYACDE"
+        assert len(protein) == 26
+        proteome = _make_proteome(protein)
+        config = PeptideGenerationConfig(
+            peptide_lengths=(9,), n_flank_length=0, c_flank_length=0
+        )
+        gen = PeptideGenerator(config, proteome)
+        # "VK" is at 1-based positions 11-12 (0-based indices 10-11)
+        variant = _make_variant(
+            aa_ref="VK", aa_alt="", aa_pos=11,
+            variant_type="inframe_deletion", consequence="inframe_deletion",
+        )
+        candidates = gen.generate(variant)
+        assert len(candidates) > 0
+        # Mutant protein is 2aa shorter: check no short peptides were produced
+        for c in candidates:
+            assert len(c.peptide_sequence) == 9
+            assert len(c.wildtype_sequence) == 9
+        # Verify mutant sequences differ from wildtype
+        assert any(c.peptide_sequence != c.wildtype_sequence for c in candidates)
+
+    def test_inframe_insertion(self):
+        """Insertion of two residues: mutant is longer than wildtype."""
+        # 20aa protein; insertion of GP after position 10
+        protein = "ACDEFGHIKL" + "MNPQRSTVWY"
+        proteome = _make_proteome(protein)
+        config = PeptideGenerationConfig(
+            peptide_lengths=(9,), n_flank_length=0, c_flank_length=0
+        )
+        gen = PeptideGenerator(config, proteome)
+        # Insertion of "GP" between position 10 and 11 (aa_pos=10)
+        variant = _make_variant(
+            aa_ref="", aa_alt="GP", aa_pos=10,
+            variant_type="inframe_insertion", consequence="inframe_insertion",
+        )
+        candidates = gen.generate(variant)
+        assert len(candidates) > 0
+        # Mutant protein is 2aa longer; 9-mer windows should still work
+        for c in candidates:
+            assert len(c.peptide_sequence) == 9
+            assert len(c.wildtype_sequence) == 9
+        # At least one mutant window should contain "G" or "P" (inserted residues)
+        assert any("G" in c.peptide_sequence or "P" in c.peptide_sequence for c in candidates)
+
+    def test_deletion_reference_validation_passes(self):
+        """No spurious reference-mismatch warning for correctly parsed multi-char aa_ref."""
+        import logging
+
+        # "VK" is at 1-based positions 11-12 (0-based indices 10-11)
+        protein = "ACDEFGHIKL" + "VK" + "MNPQRSTVWYACDE"
+        proteome = _make_proteome(protein)
+        config = PeptideGenerationConfig(peptide_lengths=(9,))
+        gen = PeptideGenerator(config, proteome)
+        variant = _make_variant(
+            aa_ref="VK", aa_alt="", aa_pos=11,
+            variant_type="inframe_deletion", consequence="inframe_deletion",
+        )
+
+        # Capture warning records from the generator's logger
+        records: list[logging.LogRecord] = []
+
+        class _Capture(logging.Handler):
+            def emit(self, record: logging.LogRecord) -> None:
+                records.append(record)
+
+        handler = _Capture()
+        logger = logging.getLogger("PeptideGenerator")
+        logger.addHandler(handler)
+        try:
+            gen.generate(variant)
+        finally:
+            logger.removeHandler(handler)
+
+        mismatch = [r for r in records if "Reference mismatch" in r.getMessage()]
+        assert not mismatch, f"Unexpected reference-mismatch warning: {mismatch[0].getMessage()}"

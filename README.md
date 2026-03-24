@@ -67,37 +67,39 @@ tox -e format    # auto-format
 
 ### HLApollo predictor
 
-HLApollo is a transformer-based MHC-I presentation predictor from Genentech.
-It is distributed as a compiled Linux binary and requires separate installation.
+HLApollo is a transformer-based MHC-I presentation predictor from Genentech,
+distributed as a compiled Linux binary. Due to kernel compatibility issues on
+modern Linux (≥6.6), we run it via Docker.
 
-**System dependencies:**
-- Linux (x86_64)
-- libatlas or openblas (`sudo pacman -S openblas` on Arch, `sudo apt-get install libatlas-base-dev` on Debian/Ubuntu)
-- git-lfs (`sudo pacman -S git-lfs` / `sudo apt-get install git-lfs`)
+**Prerequisites:** Docker must be installed and your user must be in the docker
+group (`sudo usermod -aG docker $USER`, then log out and back in).
 
 **Installation:**
 ```bash
+sudo pacman -S git-lfs docker        # Arch Linux
+# sudo apt-get install git-lfs docker.io  # Debian/Ubuntu
+
 git lfs install
 mkdir -p tools
 cd tools
 git clone https://github.com/Genentech/HLApollo.git
-chmod +x HLApollo/HLA-Apollo
-cd ..
-```
-
-**Verify:**
-```bash
-./tools/HLApollo/HLA-Apollo tools/HLApollo/example.csv /tmp/hlapollo_test.csv
-```
-
-**Docker alternative (non-Linux or if binary fails):**
-```bash
-cd tools/HLApollo
+cd HLApollo
 docker build -t hla-apollo .
 cd ../..
 ```
 
-Then set `hlapollo.docker_image: "hla-apollo"` in your config.
+**Verify:**
+```bash
+docker run --rm \
+  -v $(pwd)/tools/HLApollo:/data \
+  -t hla-apollo \
+  /home/HLA-Apollo/HLA-Apollo /data/example.csv /data/test_out.csv
+```
+
+**Native binary (alternative, only if Docker is unavailable):**
+On systems where the native binary works (older kernels, no CET shadow stacks),
+set `docker_image: null` in `configs/default.yaml` and the pipeline will call
+the binary directly.
 
 **Enable in config:**
 Set `hlapollo.enabled: true` in `configs/default.yaml` or pass programmatically.
