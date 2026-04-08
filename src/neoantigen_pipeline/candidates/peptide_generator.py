@@ -161,7 +161,9 @@ class PeptideGenerator:
                     actual_ref,
                 )
             # Continue anyway — annotation may differ from proteome version
-            mut_protein = wt_protein[:mut_idx] + variant.aa_alt + wt_protein[mut_idx + 1 :]
+            mut_protein = (
+                wt_protein[:mut_idx] + variant.aa_alt + wt_protein[mut_idx + 1 :]
+            )
 
         mutation_str = f"{variant.gene}_{variant.protein_change}"
         candidates: list[PeptideCandidate] = []

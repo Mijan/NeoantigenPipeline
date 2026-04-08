@@ -415,10 +415,15 @@ class HLApolloPredictor(MHCIPredictor):
                     binary_path = project_root / binary_path
                 repo_dir = str(binary_path.parent)
                 cmd = [
-                    "docker", "run", "--rm",
-                    "-v", f"{repo_dir}:/home/HLA-Apollo",
-                    "-v", f"{tmpdir}:/data",
-                    "-t", self._docker_image,
+                    "docker",
+                    "run",
+                    "--rm",
+                    "-v",
+                    f"{repo_dir}:/home/HLA-Apollo",
+                    "-v",
+                    f"{tmpdir}:/data",
+                    "-t",
+                    self._docker_image,
                     "/home/HLA-Apollo/HLA-Apollo",
                     "/data/input.csv",
                     "/data/output.csv",

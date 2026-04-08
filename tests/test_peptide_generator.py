@@ -4,12 +4,12 @@ from __future__ import annotations
 
 from unittest.mock import MagicMock
 
-from neoantigen_pipeline.config import PeptideGenerationConfig
-from neoantigen_pipeline.io.vcf_reader import SomaticVariant
 from neoantigen_pipeline.candidates.peptide_generator import (
     PeptideCandidate,
     PeptideGenerator,
 )
+from neoantigen_pipeline.config import PeptideGenerationConfig
+from neoantigen_pipeline.io.vcf_reader import SomaticVariant
 
 
 def _make_variant(
@@ -218,8 +218,11 @@ class TestInframeIndels:
         )
         gen = PeptideGenerator(config, proteome)
         variant = _make_variant(
-            aa_ref="V", aa_alt="", aa_pos=11,
-            variant_type="inframe_deletion", consequence="inframe_deletion",
+            aa_ref="V",
+            aa_alt="",
+            aa_pos=11,
+            variant_type="inframe_deletion",
+            consequence="inframe_deletion",
         )
         candidates = gen.generate(variant)
         assert len(candidates) > 0
@@ -244,8 +247,11 @@ class TestInframeIndels:
         gen = PeptideGenerator(config, proteome)
         # "VK" is at 1-based positions 11-12 (0-based indices 10-11)
         variant = _make_variant(
-            aa_ref="VK", aa_alt="", aa_pos=11,
-            variant_type="inframe_deletion", consequence="inframe_deletion",
+            aa_ref="VK",
+            aa_alt="",
+            aa_pos=11,
+            variant_type="inframe_deletion",
+            consequence="inframe_deletion",
         )
         candidates = gen.generate(variant)
         assert len(candidates) > 0
@@ -267,8 +273,11 @@ class TestInframeIndels:
         gen = PeptideGenerator(config, proteome)
         # Insertion of "GP" between position 10 and 11 (aa_pos=10)
         variant = _make_variant(
-            aa_ref="", aa_alt="GP", aa_pos=10,
-            variant_type="inframe_insertion", consequence="inframe_insertion",
+            aa_ref="",
+            aa_alt="GP",
+            aa_pos=10,
+            variant_type="inframe_insertion",
+            consequence="inframe_insertion",
         )
         candidates = gen.generate(variant)
         assert len(candidates) > 0
@@ -277,7 +286,9 @@ class TestInframeIndels:
             assert len(c.peptide_sequence) == 9
             assert len(c.wildtype_sequence) == 9
         # At least one mutant window should contain "G" or "P" (inserted residues)
-        assert any("G" in c.peptide_sequence or "P" in c.peptide_sequence for c in candidates)
+        assert any(
+            "G" in c.peptide_sequence or "P" in c.peptide_sequence for c in candidates
+        )
 
     def test_deletion_reference_validation_passes(self):
         """No spurious reference-mismatch warning for correctly parsed multi-char aa_ref."""
@@ -289,8 +300,11 @@ class TestInframeIndels:
         config = PeptideGenerationConfig(peptide_lengths=(9,))
         gen = PeptideGenerator(config, proteome)
         variant = _make_variant(
-            aa_ref="VK", aa_alt="", aa_pos=11,
-            variant_type="inframe_deletion", consequence="inframe_deletion",
+            aa_ref="VK",
+            aa_alt="",
+            aa_pos=11,
+            variant_type="inframe_deletion",
+            consequence="inframe_deletion",
         )
 
         # Capture warning records from the generator's logger
@@ -309,4 +323,6 @@ class TestInframeIndels:
             logger.removeHandler(handler)
 
         mismatch = [r for r in records if "Reference mismatch" in r.getMessage()]
-        assert not mismatch, f"Unexpected reference-mismatch warning: {mismatch[0].getMessage()}"
+        assert not mismatch, (
+            f"Unexpected reference-mismatch warning: {mismatch[0].getMessage()}"
+        )

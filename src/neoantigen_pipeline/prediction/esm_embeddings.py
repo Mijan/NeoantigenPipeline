@@ -26,14 +26,14 @@ _logger = logging.getLogger(__name__)
 _ESM_MAX_LEN = 1022
 
 try:
-    import esm as _esm_lib  # type: ignore[import-untyped]
+    import esm as _esm_lib
 
     ESM_AVAILABLE = True
 except ImportError:
     ESM_AVAILABLE = False
 
 try:
-    import h5py  # type: ignore[import-untyped]
+    import h5py
 
     H5PY_AVAILABLE = True
 except ImportError:
@@ -110,7 +110,7 @@ class ESMEmbeddingCache:
         key = transcript_id.split(".")[0]
         with h5py.File(self._cache_path, "a") as f:
             if key in f:
-                return f[key][:]  # type: ignore[index]
+                return f[key][:]
             embedding = self._compute_embedding(sequence)
             f.create_dataset(key, data=embedding, compression="gzip")
             return embedding
@@ -226,11 +226,10 @@ class ESMEmbeddingCache:
         if self._model is not None:
             return self._model, self._alphabet, self._repr_layer  # type: ignore[return-value]
 
-
         _logger.info(
             "Loading ESM-2 model '%s' on device '%s'.", self._model_name, self._device
         )
-        model, alphabet = getattr(_esm_lib.pretrained, self._model_name)()  # type: ignore[union-attr]
+        model, alphabet = getattr(_esm_lib.pretrained, self._model_name)()
         model = model.eval().to(self._device)
 
         # Determine the last representation layer index
@@ -265,7 +264,7 @@ class ESMEmbeddingCache:
             sequence = sequence[:_ESM_MAX_LEN]
 
         model, alphabet, repr_layer = self._load_model()
-        batch_converter = alphabet.get_batch_converter()  # type: ignore[union-attr]
+        batch_converter = alphabet.get_batch_converter()  # type: ignore[attr-defined]
 
         data = [("protein", sequence)]
         _, _, tokens = batch_converter(data)
